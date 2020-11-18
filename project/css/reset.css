@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* 여백 초기화 */
+html, body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+  margin: 0;
+  padding: 0;
+}
+
+/* 블릿 초기화 */
+ul, li {
+  list-style: none;
+}
+/* 폰트 초기화 */
+* {
+  color: #fff;
+  text-decoration: none;
+}
+body {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+/* 본문 바로가기 */
+.skip {
+  position: absolute;
+  left: 0;
+  top: -100px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+.skip:focus {
+  top: 0;
+}
