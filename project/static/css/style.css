@@ -32,6 +32,7 @@ a {
 .header .navbar .navbar_logo {
   font-size: 25px;
   color: #fff;
+  background: url(../static/image/ggumjirak.ai);
 }
 .header .navbar .navbar_logo i {
   color: #d49466;
@@ -157,6 +158,6 @@ footer .wrap_footer .last {
   height: 50px;
   line-height: 50px;
   background: rgba(0, 0, 0, 0.1);
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1.5px;
 }
