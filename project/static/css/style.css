@@ -129,26 +129,28 @@ section {
 }
 .board .board_container {
   display: flex;
-  justify-content: space-around;
-  width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
   margin: 0 auto;
   padding-top: 100px;
 }
 .board .board_container .board_notice {
   display: flex;
+  width: 65%;
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
-  padding-right: 20px;
+  padding-bottom: 50px;
 }
 .board .board_container .board_notice .board_tit {
   display: flex;
-  width: 290px;
+  width: 100%;
   padding-bottom: 14px;
   border-bottom: 1px solid #000;
 }
 .board .board_container .board_notice .board_tit h4 {
-  width: 290px;
+  width: 100%;
   font-size: 24px;
 }
 .board .board_container .board_notice .board_tit a.more:hover {
@@ -156,34 +158,55 @@ section {
 }
 .board .board_container .board_notice ul {
   font-size: 14px;
-  width: 290px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 8px;
 }
 .board .board_container .board_notice ul li {
+  /*word-break: break-all;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: inside;
+  padding-top: 7px;
+}
+.board .board_container .board_notice ul li a {
+  width: 500px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  list-style: inside;
-  padding-top: 7px;
+}
+.board .board_container .board_notice ul li span {
+  width: 150px;
+  padding-left: 80px;
+}
+.board .board_container .board_notice ul li img {
+  width: 35px;
+  height: 35px;
+  padding-right: 12px;
+}
+.board .board_container .board_notice ul li:hover a {
+  color: #fff;
 }/* //공지사항 */
 
 .board .board_container .board_report {
   display: flex;
+  width: 65%;
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
-  padding-right: 20px;
+  padding-bottom: 50px;
 }
 .board .board_container .board_report .board_tit {
   display: flex;
+  width: 100%;
   padding-bottom: 14px;
   border-bottom: 1px solid #000;
 }
 .board .board_container .board_report .board_tit h4 {
-  width: 290px;
+  width: 100%;
   font-size: 24px;
 }
 .board .board_container .board_report .board_tit a.more:hover {
@@ -191,33 +214,50 @@ section {
 }
 .board .board_container .board_report ul {
   font-size: 14px;
-  width: 290px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 8px;
 }
 .board .board_container .board_report ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: inside;
+  padding-top: 7px;
+}
+.board .board_container .board_notice ul li a {
+  width: 500px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  list-style: inside;
-  padding-top: 7px;
-}/* //재정보고 */
+}
+.board .board_container .board_notice ul li span {
+  width: 150px;
+  padding-left: 80px;
+}
+.board .board_container .board_report ul li:hover a {
+  color: #fff;
+}
+/* //재정보고 */
 
 .board .board_container .board_donation {
   display: flex;
+  width: 65%;
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
+  padding-bottom: 50px;
 }
 .board .board_container .board_donation .board_tit {
   display: flex;
+  width: 100%;
   padding-bottom: 14px;
   border-bottom: 1px solid #000;
 }
 .board .board_container .board_donation .board_tit h4 {
-  width: 290px;
+  width: 100%;
   font-size: 24px;
 }
 .board .board_container .board_donation .board_tit a.more:hover {
@@ -225,18 +265,25 @@ section {
 }
 .board .board_container .board_donation ul {
   font-size: 14px;
-  width: 290px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 8px;
 }
 .board .board_container .board_donation ul li {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: inside;
   padding-top: 7px;
+}
+.board .board_container .board_donation ul li span {
+  width: 150px;
+  padding-left: 80px;
+}
+.board .board_container .board_donation ul li:hover a {
+  color: #fff;
 }/* //후원금 결산내역 */
 
 

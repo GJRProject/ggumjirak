@@ -15,7 +15,7 @@ a, p, div, h1, h2, h3 h4, h5, h6, ul, li {
   color: #fff;
   text-decoration: none;
 }
-body {
+body, .footer_logo {
   /*font-family: 'Nanum Gothic Coding', monospace;*/
   font-family: 'Nanum Pen Script', cursive;
 }
