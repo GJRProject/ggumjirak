@@ -12,27 +12,39 @@ a {
 }
 */
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 324px;
+}
 
 /* 헤더 영역 */
 .header {
   width: 100%;
-  height: 70px;
+  height: 114px;
   position: fixed;
   top: 0;
   left: 0;
   text-align: center;
+  box-sizing: border-box;
 }
 .header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #263343;
-  padding: 10px 100px;
+  padding: 20px 100px;
 }
 .header .navbar .navbar_logo {
   font-size: 25px;
   color: #fff;
-  background: url(../static/image/ggumjirak.ai);
 }
 .header .navbar .navbar_logo i {
   color: #d49466;
@@ -40,12 +52,14 @@ a {
 .header .navbar .navbar_menu {
   display: flex;
   padding-left: 0;
+  font-size: 25px;
 }
 .header .navbar .navbar_menu li {
-  padding: 25px 40px;
+  padding: 0px 40px;
 }
 .header .navbar .navbar_menu li:hover a {
   color: #d49466;
+  text-decoration: none;
 }
 .header .navbar .navbar_links {
   display: flex;
@@ -97,27 +111,144 @@ a {
 }
 
 /* 컨텐츠 영역 */
+
 section {
-  position: absolute;
-  top: 89px;
   background-color: green;
   width: 100%;
+  height: 100%;
 }
 #myCarousel {
   width: 100%;
 
 }
+/* 컨텐츠 게시판 영역 */
+.board {
+  width: 100%;
+  height: 100%;
+  margin-top: 114px;
+}
+.board .board_container {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.board .board_container .board_notice {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+.board .board_container .board_notice .board_tit {
+  display: flex;
+  width: 290px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #000;
+}
+.board .board_container .board_notice .board_tit h4 {
+  width: 290px;
+  font-size: 24px;
+}
+.board .board_container .board_notice .board_tit a.more:hover {
+  color: #888;
+}
+.board .board_container .board_notice ul {
+  font-size: 14px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+.board .board_container .board_notice ul li {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  list-style: inside;
+  padding-top: 7px;
+}/* //공지사항 */
+
+.board .board_container .board_report {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+.board .board_container .board_report .board_tit {
+  display: flex;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #000;
+}
+.board .board_container .board_report .board_tit h4 {
+  width: 290px;
+  font-size: 24px;
+}
+.board .board_container .board_report .board_tit a.more:hover {
+  color: #888;
+}
+.board .board_container .board_report ul {
+  font-size: 14px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+.board .board_container .board_report ul li {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  list-style: inside;
+  padding-top: 7px;
+}/* //재정보고 */
+
+.board .board_container .board_donation {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.board .board_container .board_donation .board_tit {
+  display: flex;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #000;
+}
+.board .board_container .board_donation .board_tit h4 {
+  width: 290px;
+  font-size: 24px;
+}
+.board .board_container .board_donation .board_tit a.more:hover {
+  color: #888;
+}
+.board .board_container .board_donation ul {
+  font-size: 14px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+.board .board_container .board_donation ul li {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  list-style: inside;
+  padding-top: 7px;
+}/* //후원금 결산내역 */
+
 
 
 /* 푸터 영역 */
 
 footer {
-  background-color: red;
-  position: absolute;
+  position: relative;
+  transform: translateY(-100%);
   width: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  height: 324px;
+  background-color: red;
   background-color: #263343;
   text-align: center;
 }
