@@ -28,7 +28,7 @@ html, body {
 /* 헤더 영역 */
 .header {
   width: 100%;
-  height: 114px;
+  height: 150px;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,10 +37,12 @@ html, body {
 }
 .header .navbar {
   display: flex;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: #263343;
   padding: 20px 100px;
+  box-sizing: border-box;
 }
 .header .navbar .navbar_logo {
   font-size: 25px;
@@ -51,16 +53,17 @@ html, body {
 }
 .header .navbar .navbar_menu {
   display: flex;
-  width: 670px;
+  width: 650px;
   padding-left: 0;
+  color: #fff;
 }
 .header .navbar .navbar_menu li {
-  width: 220px;
-  padding: 0px 40px;
+  width: 160px;
+  padding: 0px 35px;
   box-sizing: border-box;
 }
 .header .navbar .navbar_menu li > a {
-  font-size: 15px;
+  font-size: 17px;
 }
 .header .navbar .navbar_menu li > a:hover {
   color: #d49466;
@@ -84,22 +87,20 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 670px;
   visibility: hidden;
   color: #fff;
 }
 .navbar .navbar_menu li > ul li {
   display: flex;
   flex-direction: column;
-  font-size: 13px;
+  font-size: 15px;
   text-decoration: none;
 }
 .navbar .navbar_menu li > a:hover > ul {
   visibility: visible;
 }
 .navbar .navbar_menu li > ul li ul {
-  font-size: 15px;
-  color: #fff;
+
 }
 
 
