@@ -17,7 +17,7 @@ a, p, div, h1, h2, h3 h4, h5, h6, ul, li {
   color: #fff;
   text-decoration: none;
 }
-body, .footer_logo {
+div, h1, h2, h3, h4, h5, h6, header .navbar ul li, .footer_logo {
   /*font-family: 'Nanum Gothic Coding', monospace;*/
   font-family: 'Nanum Pen Script', cursive;
 }
@@ -25,6 +25,10 @@ section .board li, footer {
   font-family: 'Nanum Gothic Coding', monospace;
   font-size: 15px;
 }
+section ul li {
+  text-decoration: none;
+}
+
 
 /* IR 효과 */
 /* 1. 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
