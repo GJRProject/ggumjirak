@@ -17,14 +17,14 @@ a, p, div, h1, h2, h3 h4, h5, h6, ul, li {
   color: #fff;
   text-decoration: none;
 }
-div, h1, h2, h3, h4, h5, h6, header .navbar ul li, .footer_logo {
-  /*font-family: 'Nanum Gothic Coding', monospace;*/
+header, .board_tit, .footer_logo {
   font-family: 'Nanum Pen Script', cursive;
 }
-section .board li, footer {
+section, .board_container, footer {
   font-family: 'Nanum Gothic Coding', monospace;
   font-size: 15px;
 }
+
 section ul li {
   text-decoration: none;
 }
