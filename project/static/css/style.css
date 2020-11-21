@@ -53,14 +53,16 @@ html, body {
   display: flex;
   width: 670px;
   padding-left: 0;
-  font-size: 25px;
 }
 .header .navbar .navbar_menu li {
-  width: 180px;
+  width: 220px;
   padding: 0px 40px;
   box-sizing: border-box;
 }
-.header .navbar .navbar_menu li:hover a {
+.header .navbar .navbar_menu li > a {
+  font-size: 15px;
+}
+.header .navbar .navbar_menu li > a:hover {
   color: #d49466;
   text-decoration: none;
 }
@@ -78,22 +80,28 @@ html, body {
   font-size: 25px;
 }
 /* 네비 서브메뉴 */
-.navbar .navbar_menu li ul {
+.navbar .navbar_menu li > ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 670px;
   visibility: hidden;
-}
-.navbar .navbar_menu li ul li {
-  width: 180px;
-  font-size: 17px;
-  text-decoration: none;
   color: #fff;
 }
-.navbar .navbar_menu li:hover ul {
+.navbar .navbar_menu li > ul li {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  text-decoration: none;
+}
+.navbar .navbar_menu li > a:hover > ul {
   visibility: visible;
 }
+.navbar .navbar_menu li > ul li ul {
+  font-size: 15px;
+  color: #fff;
+}
+
 
 
 @media screen and (max-width: 768px) {
