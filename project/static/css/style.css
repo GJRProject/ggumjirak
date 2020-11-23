@@ -12,13 +12,13 @@ a {
 }
 */
 
+/* 전체 영역 */
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
-
 .wrap {
   height: auto;
   min-height: 100%;
@@ -28,7 +28,7 @@ html, body {
 /* 헤더 영역 */
 .header {
   width: 100%;
-  height: 150px;
+  height: 130px;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,41 +44,61 @@ html, body {
   padding: 0px 90px;
   box-sizing: border-box;
 }
+/* 헤더 로고 영역 */
 .header .navbar .navbar_logo {
-  display:
   width: 270px;
 }
+/* 헤더 대메뉴 영역 */
 .header .navbar .navbar_menu {
-  display: flex;
   width: 670px;
-  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
 }
-.header .navbar .navbar_menu ul,
-.header .navbar .navbar_menu li,
-.header .navbar .navbar_menu li a {
-  color: #fff;
-}
-.header .navbar .navbar_menu li {
-  width: 190px;
-  padding: 0px 35px;
+.header .navbar .navbar_menu .dropdown {
+  display: inline-flex;
+  flex-direction: column;
+  width: 150px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-sizing: border-box;
 }
-.header .navbar .navbar_menu li > a {
-  font-size: 25px;
-}
-.header .navbar .navbar_menu li > a:hover {
-  color: #d49466;
+.header .navbar .navbar_menu .dropdown a {
+  color: #fff;
+  font-size: 22px;
   text-decoration: none;
+  line-height: 35px;
+}
+/* 헤더 세부 메뉴 드롭다운 영역 */
+.header .navbar .navbar_menu .dropdown .dropdown-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #263343;
+  border-color: #263343;
+  padding-top: 21px;
+}
+.header .navbar .navbar_menu .dropdown .dropdown-menu .dropdown-item {
+  font-size: 17px;
+}
+.header .navbar .navbar_menu .dropdown a:hover {
+  color: #d49466;
+}
+.header .navbar .navbar_menu .dropdown > a:hover .dropdown-menu {
+  display: inline-flex;
+}
+.header .navbar .navbar_links a {
+  color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .header .navbar .navbar_links {
-  display: flex;
+  padding-top: 48px;
 }
-.header .navbar .navbar_links li a i {
-  color: #fff;
-}
-.header .navbar .navbar_links li {
-  padding: 25px 10px;
-}
+
+
+
 .header .navbar a.navbar_toogleBtn {
   display: none;
   position: absolute;
@@ -86,28 +106,6 @@ html, body {
   right: 30;
   font-size: 25px;
 }
-/* 네비 서브메뉴 */
-.navbar .navbar_menu li > ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  visibility: hidden;
-  color: #fff;
-}
-.navbar .navbar_menu li > ul li {
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-  text-decoration: none;
-}
-.navbar .navbar_menu li > a:hover > ul {
-  visibility: visible;
-}
-.navbar .navbar_menu li > ul li ul {
-  display: flex;
-  flex-direction: column;
-}
-
 
 
 @media screen and (max-width: 768px) {
@@ -145,13 +143,15 @@ html, body {
   }
 }
 
+
+
 /* 컨텐츠 영역 */
 
 section {
   background-color: green;
   width: 100%;
   height: 100%;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 #myCarousel {
   width: 100%;
@@ -161,7 +161,7 @@ section {
 .board {
   width: 100%;
   height: 100%;
-  margin-top: 150px;
+  margin-top: 130px;
   padding-top: 100px;
 }
 .board .board_container {
