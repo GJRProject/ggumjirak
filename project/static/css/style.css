@@ -41,29 +41,30 @@ html, body {
   justify-content: space-between;
   align-items: center;
   background-color: #263343;
-  padding: 20px 100px;
+  padding: 0px 90px;
   box-sizing: border-box;
 }
 .header .navbar .navbar_logo {
-  font-size: 25px;
-  color: #fff;
-}
-.header .navbar .navbar_logo i {
-  color: #d49466;
+  display:
+  width: 270px;
 }
 .header .navbar .navbar_menu {
   display: flex;
-  width: 650px;
-  padding-left: 0;
+  width: 670px;
+  padding-top: 50px;
+}
+.header .navbar .navbar_menu ul,
+.header .navbar .navbar_menu li,
+.header .navbar .navbar_menu li a {
   color: #fff;
 }
 .header .navbar .navbar_menu li {
-  width: 160px;
+  width: 190px;
   padding: 0px 35px;
   box-sizing: border-box;
 }
 .header .navbar .navbar_menu li > a {
-  font-size: 17px;
+  font-size: 25px;
 }
 .header .navbar .navbar_menu li > a:hover {
   color: #d49466;
@@ -71,6 +72,9 @@ html, body {
 }
 .header .navbar .navbar_links {
   display: flex;
+}
+.header .navbar .navbar_links li a i {
+  color: #fff;
 }
 .header .navbar .navbar_links li {
   padding: 25px 10px;
@@ -100,7 +104,8 @@ html, body {
   visibility: visible;
 }
 .navbar .navbar_menu li > ul li ul {
-
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -146,6 +151,7 @@ section {
   background-color: green;
   width: 100%;
   height: 100%;
+  margin-top: 150px;
 }
 #myCarousel {
   width: 100%;
@@ -155,7 +161,8 @@ section {
 .board {
   width: 100%;
   height: 100%;
-  margin-top: 114px;
+  margin-top: 150px;
+  padding-top: 100px;
 }
 .board .board_container {
   display: flex;
@@ -163,7 +170,6 @@ section {
   align-items: center;
   width: 1000px;
   margin: 0 auto;
-  padding-top: 100px;
 }
 .board .board_container .board_notice {
   display: flex;
@@ -183,11 +189,14 @@ section {
   width: 100%;
   font-size: 24px;
 }
-.board .board_container .board_notice .board_tit a.more:hover {
+.board .board_container .board_tit a i {
+  color: #fff;
+}
+.board .board_container .board_tit a i:hover {
   color: #888;
 }
 .board .board_container .board_notice ul {
-  font-size: 14px;
+  font-size: 13px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -207,6 +216,7 @@ section {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: #fff;
 }
 .board .board_container .board_notice ul li span {
   width: 150px;
@@ -239,11 +249,8 @@ section {
   width: 100%;
   font-size: 24px;
 }
-.board .board_container .board_report .board_tit a.more:hover {
-  color: #888;
-}
 .board .board_container .board_report ul {
-  font-size: 14px;
+  font-size: 13px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -257,13 +264,14 @@ section {
   list-style: inside;
   padding-top: 7px;
 }
-.board .board_container .board_notice ul li a {
+.board .board_container .board_report ul li a {
   width: 500px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: #fff;
 }
-.board .board_container .board_notice ul li span {
+.board .board_container .board_report ul li span {
   width: 150px;
   padding-left: 80px;
 }
@@ -290,9 +298,6 @@ section {
   width: 100%;
   font-size: 24px;
 }
-.board .board_container .board_donation .board_tit a.more:hover {
-  color: #888;
-}
 .board .board_container .board_donation ul {
   font-size: 14px;
   width: 100%;
@@ -307,6 +312,9 @@ section {
   align-items: center;
   list-style: inside;
   padding-top: 7px;
+}
+.board .board_container .board_donation ul li a {
+  color: #fff;
 }
 .board .board_container .board_donation ul li span {
   width: 150px;
@@ -325,8 +333,6 @@ footer {
   transform: translateY(-100%);
   width: 100%;
   height: 324px;
-  background-color: red;
-  background-color: #263343;
   text-align: center;
 }
 footer .wrap_footer {
@@ -335,6 +341,7 @@ footer .wrap_footer {
   align-items: center;
   flex-direction: column;
   padding-top: 40px;
+  background-color: #263343;
 }
 footer .wrap_footer .footer_logo {
   font-size: 25px;
@@ -361,11 +368,11 @@ footer .wrap_footer .footer_address ul li span {
   font-size: 16px;
   padding-left: 10px;
 }
-footer .wrap_footer .last {
+footer .wrap_footer div.last {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  background: rgba(0, 0, 0, 0.1);
   font-size: 14px;
   letter-spacing: 1.5px;
+  background: rgba(0, 0, 0, 0.2);
 }
