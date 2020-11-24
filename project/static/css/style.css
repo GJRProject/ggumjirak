@@ -50,43 +50,50 @@ html, body {
 }
 /* 헤더 대메뉴 영역 */
 .header .navbar .navbar_menu {
-  width: 670px;
+  width: 820px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 48px;
 }
 .header .navbar .navbar_menu .dropdown {
   display: inline-flex;
   flex-direction: column;
-  width: 150px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 160px;
+  padding-left: 10px;
+  padding-right: 10px;
   box-sizing: border-box;
 }
-.header .navbar .navbar_menu .dropdown a {
+.header .navbar .navbar_menu .dropdown a.btn {
   color: #fff;
   font-size: 22px;
   text-decoration: none;
-  line-height: 35px;
+  line-height: 40px;
+  width: 100%;
+  border: 0;
 }
+.header .navbar .navbar_menu .dropdown a.btn:focus {
+  outline: 0;
+  box-shadow:none;
+  -webkit-box-shadow:none;
+}
+
+
 /* 헤더 세부 메뉴 드롭다운 영역 */
 .header .navbar .navbar_menu .dropdown .dropdown-menu {
-  display: none;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   background-color: #263343;
   border-color: #263343;
   padding-top: 21px;
+  width: 100%;
 }
 .header .navbar .navbar_menu .dropdown .dropdown-menu .dropdown-item {
-  font-size: 17px;
+  font-size: 18px;
+  color: #fff;
 }
-.header .navbar .navbar_menu .dropdown a:hover {
-  color: #d49466;
-}
-.header .navbar .navbar_menu .dropdown > a:hover .dropdown-menu {
-  display: inline-flex;
+.header .navbar .navbar_menu .dropdown .dropdown-menu .dropdown-item:hover {
+  color: #000;
 }
 .header .navbar .navbar_links a {
   color: #fff;
