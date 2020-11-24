@@ -14,7 +14,6 @@ ul, li {
 }
 /* 폰트 초기화 */
 a, p, div, h1, h2, h3 h4, h5, h6, ul, li {
-  color: #fff;
   text-decoration: none;
 }
 header, .board_tit, .footer_logo {

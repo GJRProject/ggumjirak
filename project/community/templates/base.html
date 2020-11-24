@@ -20,88 +20,80 @@
 
     </head>
     <body>
-        <div class="wrap">
-            <a href="#contents" class="skip">본문 바로가기</a>
-            <!-- 헤더 영역 -->
-            <header class="header">
-                <nav class="navbar">
-                    <!-- 메인 로고 -->
-                    <div class="navbar_logo">
-                        <a href="#"><img src="{% static 'image/ggumjirak-or-ko.png' %}" alt="홈 화면 로고 이미지"></a>
-                    </div>
-                    <!-- //메인 로고 -->
-                    <!-- 네비 메뉴 -->
-                    <div class="navbar_menu">
-                        <div class="dropdown">
-                            <a href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">꿈지락네트워크</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">법인소개</a>
-                                <a class="dropdown-item" href="#">- CEO 인삿말</a>
-                                <a class="dropdown-item" href="#">- CI 소개</a>
-                                <a class="dropdown-item" href="#">- 연혁</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">- 스케줄</a>
-                                <a class="dropdown-item" href="#">- contact</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">재정보고</a>
-                                <a class="dropdown-item" href="#">공간 라운딩</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <a href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">뉴스</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">공지사항</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">소식지 & 연구</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <a href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">프로젝트</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">교복 입은 시민</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">사적인 공공 공간</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">지도상젋</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">사업의뢰</a>
-                                <a class="dropdown-item" href="#">- 컨설, 강의</a>
-                                <a class="dropdown-item" href="#">- 토론, 리빙랩</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <a href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">후원</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">후원방법 및 안내</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">후원금 결산내역</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <a href="https://docs.google.com/forms/d/1UuNsNniqVeyFK47gLdGEMz1cfaqopDk_DWN99miV6z8/viewform?edit_requested=true" target="_blank" href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">의뢰</a>
-                        </div>
-                    </div>
-                    <!-- //네비 메뉴 -->
-                    <!-- sns 링크 아이콘 -->
-                    <div class="navbar_links">
-                        <a href="https://www.facebook.com/ggumjiraknetwork" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/ggumjirak/?igshid=naplinhvnn36" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <div>
-                    <!-- //sns 링크 아이콘 -->
-                    <!-- 햄버거 박스 -->
-                    <a href="#" class="navbar_toogleBtn">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                    <!-- //햄버거 박스 -->
-                </nav>
-            </header>
-            <!-- //헤더 영역  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">
+                <img class="img-fluid" src="{% static 'image/ggumjirak-or-ko.png' %}" alt="홈 화면 로고 이미지">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
 
-            <!-- 컨텐츠 영역  -->
-            {% block content %}
-            {% endblock %}
-            <!-- //컨텐츠 영역  -->
-        </div>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="dropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    꿈지락네트워크
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">법인소개</a>
+                    <a class="dropdown-item" href="#">- CEO 인삿말</a>
+                    <a class="dropdown-item" href="#">- CI 소개</a>
+                    <a class="dropdown-item" href="#">- 연혁</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">- 스케줄</a>
+                    <a class="dropdown-item" href="#">- contact</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">재정보고</a>
+                    <a class="dropdown-item" href="#">공간 라운딩</a>
+                </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">뉴스</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">공지사항</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">소식지 & 연구</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">프로젝트</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">교복 입은 시민</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">사적인 공공 공간</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">지도상젋</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">사업의뢰</a>
+                        <a class="dropdown-item" href="#">- 컨설, 강의</a>
+                        <a class="dropdown-item" href="#">- 토론, 리빙랩</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">후원</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">후원방법 및 안내</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">후원금 결산내역</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="https://docs.google.com/forms/d/1UuNsNniqVeyFK47gLdGEMz1cfaqopDk_DWN99miV6z8/viewform?edit_requested=true" target="_blank" href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">의뢰</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/ggumjiraknetwork" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ggumjirak/?igshid=naplinhvnn36" target="_blank"><i class="fab fa-instagram"></i></a>
+                <li>
+              </ul>
+            </div>
+          </nav>
+
+        {% block content %}
+        {% endblock %}
+
             <!-- 푸터 영역  -->
             <footer>
                 <div class="wrap_footer">

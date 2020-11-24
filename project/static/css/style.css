@@ -154,21 +154,12 @@ html, body {
 
 /* 컨텐츠 영역 */
 
-section {
-  background-color: green;
-  width: 100%;
-  height: 100%;
-  margin-top: 130px;
-}
-
 /* 컨텐츠 게시판 영역 */
-.board {
-  width: 100%;
-  height: 100%;
-  margin-top: 130px;
+
+.label-img{
+  width: 30px;
 }
 .board .carousel {
-  margin-top: 20px;
   margin-bottom: 50px;
 }
 .board .carousel .carousel-inner .carousel-item img {
@@ -342,10 +333,7 @@ section {
 /* 푸터 영역 */
 
 footer {
-  position: relative;
-  transform: translateY(-100%);
-  width: 100%;
-  height: 324px;
+  color: #fff;
   text-align: center;
 }
 footer .wrap_footer {
