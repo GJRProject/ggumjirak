@@ -6,3 +6,7 @@ toogleBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
   links.classList.toggle('active');
 });
+
+$('.carousel').carousel({
+  interval: 2000
+});
