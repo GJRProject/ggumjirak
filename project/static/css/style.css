@@ -19,7 +19,9 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
+body {
+  padding-top: 120px;
+}
 
 /* 헤더 영역 */
 nav {
