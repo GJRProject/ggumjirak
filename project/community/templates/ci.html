@@ -2,324 +2,65 @@
 
 {% block content %}
 
-<style>
-.page-content {
-  background-color:#FFFFFF;
-}
-.section-slide {
-  height:200px;
-}
+<div class="container text-center my-5">
 
-.box {
-  float:left;
-  margin-left:70px;
-  position:relative;
-  width:930px;
-}
-.container {
-  padding-top:50px;
-  padding-bottom: 130px;
-}
+  <h2 class="my-3">꿈지락 네트워크의 CI를 소개합니다.</h2>
+  <p class="my-5">
+    (사) 꿈지락네트워트(이하 꿈지락)의 CI는 '말풍선'과 '연결'을 모티브로 하고 있습니다.<br>
+    꿈지락이 만들어가는 더 나은 미래는 "개인의 다양한 생각이 존중받는 사회", "타인과의 관계 속에서 발현하는 시민성"에 있습니다.<br>
+    '말풍선'은 시민 개인의 다양한 생각, 그로부터 시작되는 꿈을 상징하며, 이를 이어주는 곡선과 직선이 '연결'을 의미합니다 <br>
+  </p>
+  <img src="../static/image/ci_1.PNG" alt="" class="img-fluid">
 
-.text-1 {
-  color:#494949;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:30px;
-  margin-left:0px;
-  margin-top:70px;
-  text-align:center;
-}
-.text-2,
-.text-3,
-.text-4 {
-  color:#6D6D6D;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:14px;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
-}
-.ci-title_1 {
-  float:none;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:20px;
-  font-weight:700;
-  margin-left:0px;
-  margin-top:100px;
-  position:relative;
-}
-.iu-box {
-  background-size:cover;
-  border-color:#E9E9E9;
-  border-width:1px;
-  height:250px;
-  margin-left:0px;
-  margin-top:15px;
-  display: flex;
-  justify-content: space-between;
-}
-.iu-box ul {
-  display: flex;
-  flex-direction: column;
-}
-.iu-box ul li p {
-  margin-top: 30px;
-}
+  <p class="my-5">
+    꿈지락의 기본 색상은 'ggumjirak orange'입니다. <br>
+    오렌지 색은 정의, 원기, 약동, 활력, 만족, 유쾌, 적극 등을 상징합니다.<br>
+    보조색상으로 'ggumjirak mint'와 'ggumjirak silver'를 활용합니다.<br>
+    민트색은 청량, 신뢰, 미래 등을 상징하며, 은색은 이성, 안정, 도시 등을 상징합니다.<br>
+  </p>
+  <img src="../static/image/ci_2.PNG" alt="" class="img-fluid">
 
-.iu-text2 div.iu-box {
-  display: flex;
-  justify-content: space-between;
-}
-.iu-text2 div.iu-box li {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.iu-text2 div.iu-box li p {
-  margin: 0;
-}
-.iu-text2 h4 {
-  margin-bottom: 60px;
-}
+  <p class="my-5">
+    CI는 ggumjirak orange를 공식(기본형)으로 사용하되, 프로젝트의 성격에 따라 색상 활용을 합니다.<br>
+    ggumjirak orange는 아동, 청소년사업을 중심으로 교육컨텐츠 및 해당 프로젝트에 주로 사용합니다.<br>
+    ggumjirak mint는 청년정책을 중심으로 한 학술, 연구, 기술, 경제, 도시 등의 프로젝트에 활용합니다.
+  </p>
 
-.box-2 {
-  float:left;
-  height:145px;
-  margin-left:0px;
-  margin-top:80px;
-  position:relative;
-  width:33.30%;
-}
-.image {
-  float:none;
-  height:65px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:12px;
-  position:relative;
-  width:189px;
-}
-.box-3 {
-  float:left;
-  height:140px;
-  margin-top:80px;
-  position:relative;
-  width:33.30%;
-}
-.image-1 {
-  float:none;
-  height:90px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:0px;
-  position:relative;
-  width:123px;
-}
-.box-4 {
-  float:left;
-  height:140px;
-  margin-top:80px;
-  position:relative;
-  width:33.30%;
-}
-.image-2 {
-  float:none;
-  height:66px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:15px;
-  position:relative;
-  width:60px;
-}
-.ci-title {
-  float:none;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:20px;
-  font-weight:700;
-  margin-left:0px;
-  margin-top:60px;
-  position:relative;
-}
-.box-5 {
-  float:none;
-  margin-left:0px;
-  margin-top:0px;
-  position:relative;
-}
-.box-6 {
-  float:left;
-  height:125px;
-  position:relative;
-  width:218px;
-}
-.box-7 {
-  background-color:#eb4766;
-  float:none;
-  height:86px;
-  margin-left:0px;
-  margin-top:0px;
-  position:relative;
-}
-.box-8 {
-  border-bottom-color:#DBDBDB;
-  border-bottom-width:1px;
-  border-left-color:#DBDBDB;
-  border-left-width:1px;
-  border-right-color:#DBDBDB;
-  border-right-width:1px;
-  padding-bottom:8px;
-  padding-left:12px;
-  padding-right:12px;
-  padding-top:8px;
-  position:relative;
-}
-.text-5 {
-  float:left;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:16px;
-  font-weight:700;
-  margin-left:0px;
-  margin-top:0px;
-  position:relative;
-}
-.text-6 {
-  float:left;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:14px;
-  position:relative;
-  right:0px;
-}
-.box-9 {
-  float:left;
-  height:125px;
-  margin-left:19px;
-  position:relative;
-  width:218px;
-}
-.box-10 {
-  background-color:#57e094;
-  border-color:#DBDBDB;
-  border-width:1px;
-  float:none;
-  height:84px;
-  margin-left:0px;
-  margin-top:0px;
-  position:relative;
-}
-.box-11 {
-  border-bottom-color:#DBDBDB;
-  border-bottom-width:1px;
-  border-left-color:#DBDBDB;
-  border-left-width:1px;
-  border-right-color:#DBDBDB;
-  border-right-width:1px;
-  float:none;
-  padding-bottom:8px;
-  padding-left:12px;
-  padding-right:12px;
-  padding-top:8px;
-  position:relative;
-}
-.text-7 {
-  float:left;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:16px;
-  font-weight:700;
-  margin-left:0px;
-  margin-top:0px;
-  position:relative;
-}
-
-.text-8,
-.text-9 {
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:16px;
-  font-weight:700;
-  text-align: center;
-}
-.text-10 {
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:14px;
-  text-align: center;
-}
-.box-12 {
-  float:left;
-  height:125px;
-  margin-left:19px;
-  position:relative;
-  width:218px;
-}
-.box-13 {
-  background-color:#d4d9b3;
-  float:none;
-  height:86px;
-  margin-left:0px;
-  margin-top:0px;
-  position:relative;
-}
-.box-14 {
-  border-bottom-color:#DBDBDB;
-  border-bottom-width:1px;
-  border-left-color:#DBDBDB;
-  border-left-width:1px;
-  border-right-color:#DBDBDB;
-  border-right-width:1px;
-  float:none;
-  padding-bottom:8px;
-  padding-left:12px;
-  padding-right:12px;
-  padding-top:8px;
-  position:relative;
-}
-
-</style>
-
-<div class="container">
-    <div class="board_container" style='color:black'>
-            <div class="iu-text text-1">
-                <h2>
-                    꿈지락 네트워크의 CI를 소개합니다.
-                </h2>
-            </div>
+  <!--
             <div class="iu-text ci-title_1">
                 <h4>로고타입</h4>
             </div>
             <div class="iu-box box-1">
                 <ul class="iu-box box-2">
-                    <li class="iu-text text-2"><img class="iu-image image" src="../static/image/ggumjirak-or-ko-full.png"></li>
-                    <li class="iu-text text-4"><p>정식명칭 가로형</p></li>
+                    <li class="iu-text text-2"><img class="iu-image image" src="../static/image/ci_1.PNG"></li>
+                    <li class="iu-text text-4"><p>가로형 CI</p></li>
                 </ul>
                 <ul class="iu-box box-3">
-                    <li class="iu-text text-2"><img class="iu-image image-1" src="../static/image/ggumjirak-or-ko.png"></li>
-                    <li class="iu-text text-4"><p>일반 가로형</p></li>
-                </ul>
-                <ul class="iu-box box-4">
-                    <li class="iu-text text-2"><img class="iu-image image-2" src="../static/image/ggumjirak-or-ko-short-01.png"></li>
-                    <li class="iu-text text-4"><p>이미지형 로고</p></li>
+                    <li class="iu-text text-2"><img class="iu-image image-1" src="../static/image/ci_2.PNG"></li>
+                    <li class="iu-text text-4"><p>세로형 CI</p></li>
                 </ul>
             </div>
+            -->
 
-            <div class="iu-text2 ci-title">
-                <h4>컬러시스템</h4>
-                <div class="iu-box box-5">
-                  <ul class="iu-box box-8">
-                    <li><img src="/../static/image/green.PNG" alt=""></li>
-                    <li class="iu-text text-9"><p>ggumjirak Orange</p></li>
-                    <li class="iu-text text-10"><p>C8 M72 Y60 K0</p></li>
-                  </ul>
-                  <ul class="iu-box box-8">
-                    <li><img src="/../static/image/orange.PNG" alt=""></li>
-                    <li class="iu-text text-9"><p>ggumjirak mint</p></li>
-                    <li class="iu-text text-10"><p>C66 M12 Y33 K0</p></li>
-                  </ul>
-                  <ul class="iu-box box-8">
-                    <li><img src="/../static/image/silver.PNG" alt=""></li>
-                    <li class="iu-text text-9"><p>ggumjirak silver</p></li>
-                    <li class="iu-text text-10"><p>C17 M15 Y30 K0</p></li>
-                  </ul>
-                </div>
-
-            </div>
+  
+    <h4 class="mt-5 mb-3">컬러시스템</h4>
+    <div class="row">
+    
+        <div class="col-sm-4">
+          <img src="/../static/image/green.PNG" alt="" class="img-fluid">
+          <p>ggumjirak Orange</p>
+          <p>C8 M72 Y60 K0</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="/../static/image/orange.PNG" alt="" class="img-fluid">
+          <p>ggumjirak mint</p>
+          <p>C66 M12 Y33 K0</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="/../static/image/silver.PNG" alt="" class="img-fluid">
+          <p>ggumjirak silver</p>
+          <p>C17 M15 Y30 K0</p>
+        </div>            
     </div>
-</div>
-{% endblock %}
+  </div>
+  {% endblock %}
