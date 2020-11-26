@@ -3,7 +3,7 @@
 {% block content %}
 
 <style>
-    .page-content {
+.page-content {
   background-color:#FFFFFF;
 }
 .section-slide {
@@ -15,6 +15,10 @@
   margin-left:70px;
   position:relative;
   width:930px;
+}
+.container {
+  padding-top:50px;
+  padding-bottom: 100px;
 }
 
 .text-1 {
@@ -33,23 +37,38 @@
   font-size:20px;
   font-weight:700;
   margin-left:0px;
-  margin-top:60px;
+  margin-top:100px;
   position:relative;
 }
-.box-1 {
-  background-image:url('/resource/project/about/ci/ci_back.png');
+.iu-box {
   background-size:cover;
   border-color:#E9E9E9;
   border-width:1px;
-  float:none;
   height:300px;
   margin-left:0px;
   margin-top:15px;
-  position:relative;
+  display: flex;
+  justify-content: space-between;
+}
+.iu-box ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.iu-box ul li p {
+  margin-top: 30px;
+}
+
+.iu-text2 div.iu-box {
+  display: flex;
+  justify-content: space-between;
+}
+.iu-text2 h4 {
+  margin-bottom: 60px;
 }
 .box-2 {
   float:left;
-  height:140px;
+  height:145px;
   margin-left:0px;
   margin-top:80px;
   position:relative;
@@ -288,39 +307,48 @@
 <div class="container">
     <div class="board_container" style='color:black'>
             <div class="iu-text text-1">
-                <p>
+                <h2>
                     꿈지락 네트워크의 CI를 소개합니다.
-                </p>
+                </h2>
             </div>
             <div class="iu-text ci-title_1">
-                <p>로고타입</p>
+                <h4>로고타입</h4>
             </div>
             <div class="iu-box box-1">
-                <div class="iu-box box-2">
-                    <img class="iu-image image"
-                        src="../static/image/ggumjirak-or-ko-full.png">
-                    <div class="iu-text text-2">
-                        <p>정식명칭 가로형</p>
-                    </div>
-                </div>
-                <div class="iu-box box-3">
-                    <img class="iu-image image-1"
-                        src="../static/image/ggumjirak-or-ko.png">
-                    <div class="iu-text text-3">
-                        <p>일반 가로형</p>
-                    </div>
-                </div>
-                <div class="iu-box box-4">
-                    <img class="iu-image image-2"
-                        src="../static/image/ggumjirak-or-ko-short-01.png">
-                    <div class="iu-text text-4">
-                        <p>이미지형 로고</p>
-                    </div>
-                </div>
+                <ul class="iu-box box-2">
+                    <li class="iu-text text-2"><img class="iu-image image" src="../static/image/ggumjirak-or-ko-full.png"></li>
+                    <li class="iu-text text-4"><p>정식명칭 가로형</p></li>
+                </ul>
+                <ul class="iu-box box-3">
+                    <li class="iu-text text-2"><img class="iu-image image-1" src="../static/image/ggumjirak-or-ko.png"></li>
+                    <li class="iu-text text-4"><p>일반 가로형</p></li>
+                </ul>
+                <ul class="iu-box box-4">
+                    <li class="iu-text text-2"><img class="iu-image image-2" src="../static/image/ggumjirak-or-ko-short-01.png"></li>
+                    <li class="iu-text text-4"><p>이미지형 로고</p></li>
+                </ul>
             </div>
-            <div class="iu-text ci-title">
-                <h2>컬러시스템</p>
+
+            <div class="iu-text2 ci-title">
+                <h4>컬러시스템</h4>
                 <div class="iu-box box-5">
+                  <ul class="iu-box box-8">
+                    <li><img src="/../static/image/green.PNG" alt=""></li>
+                    <li class=><p>ggumjirak Orange</p></li>
+                    <li class=><p>C8 M72 Y60 K0</p></li>
+                  </ul>
+                  <ul class="iu-box box-8">
+                    <li><img src="/../static/image/orange.PNG" alt=""></li>
+                    <li class=><p>ggumjirak mint</p></li>
+                    <li class=><p>C66 M12 Y33 K0</p></li>
+                  </ul>
+                  <ul class="iu-box box-8">
+                    <li><img src="/../static/image/silver.PNG" alt=""></li>
+                    <li class="iu-text text-9"><p>ggumjirak silver</p></li>
+                    <li class="iu-text text-10"><p>C17 M15 Y30 K0</p></li>
+                  </ul>
+                </div>
+                  <!--
                     <div class="iu-box box-6">
                         <div class="iu-box box-7"></div>
                         <div class="iu-box box-8">
@@ -354,6 +382,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
 
             </div>
     </div>
