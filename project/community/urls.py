@@ -12,6 +12,7 @@ urlpatterns = [
     path('gallery/', views.gallery),
     path('ci/', views.ci),
     path('greeting/', views.greeting),
+    path('rounding/', views.rounding),
 
     path('notice/', views.notice),
     path('notice/<int:pk>/',views.notice_posting, name='notice_posting'),
