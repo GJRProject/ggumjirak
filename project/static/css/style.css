@@ -43,6 +43,11 @@ body {
 .navbar a {
   color: #fff !important;
 }
+
+.navbar a:hover {
+  color: #53aeaf !important;
+}
+
 .navbar-nav .nav-item a {
   padding: 0 2rem;  
   line-height: 45px;
@@ -51,9 +56,7 @@ body {
   outline: none;
   box-shadow: none;
 }
-.navbar .navbar-collapse .navbar-nav .nav-item a:hover {
-  color: #53aeaf;
-}
+
 
 /* 헤더 세부 메뉴 드롭다운 영역 */
 .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
@@ -179,7 +182,7 @@ footer  div.last {
   background: rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
 
   .dropdown-menu{
     text-align: center;
