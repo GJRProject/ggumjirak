@@ -1,0 +1,366 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    .page-content {
+  background-color:#FFFFFF;
+}
+.section-slide {
+  height:200px;
+}
+
+.box {
+  float:left;
+  margin-left:70px;
+  position:relative;
+  width:930px;
+}
+
+.text-1 {
+  color:#494949;
+  float:none;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:30px;
+  margin-left:0px;
+  margin-top:30px;
+  position:relative;
+  text-align:center;
+}
+.ci-title_1 {
+  float:none;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:20px;
+  font-weight:700;
+  margin-left:0px;
+  margin-top:60px;
+  position:relative;
+}
+.box-1 {
+  background-image:url('/resource/project/about/ci/ci_back.png');
+  background-size:cover;
+  border-color:#E9E9E9;
+  border-width:1px;
+  float:none;
+  height:300px;
+  margin-left:0px;
+  margin-top:15px;
+  position:relative;
+}
+.box-2 {
+  float:left;
+  height:140px;
+  margin-left:0px;
+  margin-top:80px;
+  position:relative;
+  width:33.30%;
+}
+.image {
+  float:none;
+  height:65px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:12px;
+  position:relative;
+  width:189px;
+}
+.text-2 {
+  bottom:0px;
+  color:#6D6D6D;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:14px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:center;
+}
+.box-3 {
+  float:left;
+  height:140px;
+  margin-top:80px;
+  position:relative;
+  width:33.30%;
+}
+.image-1 {
+  float:none;
+  height:90px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:0px;
+  position:relative;
+  width:123px;
+}
+.text-3 {
+  bottom:0px;
+  color:#6D6D6D;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:14px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:center;
+}
+.box-4 {
+  float:left;
+  height:140px;
+  margin-top:80px;
+  position:relative;
+  width:33.30%;
+}
+.image-2 {
+  float:none;
+  height:66px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:15px;
+  position:relative;
+  width:60px;
+}
+.text-4 {
+  bottom:0px;
+  color:#6D6D6D;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:14px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:center;
+}
+.ci-title {
+  float:none;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:20px;
+  font-weight:700;
+  margin-left:0px;
+  margin-top:60px;
+  position:relative;
+}
+.box-5 {
+  float:none;
+  margin-left:0px;
+  margin-top:0px;
+  position:relative;
+}
+.box-6 {
+  float:left;
+  height:125px;
+  position:relative;
+  width:218px;
+}
+.box-7 {
+  background-color:#eb4766;
+  float:none;
+  height:86px;
+  margin-left:0px;
+  margin-top:0px;
+  position:relative;
+}
+.box-8 {
+  border-bottom-color:#DBDBDB;
+  border-bottom-width:1px;
+  border-left-color:#DBDBDB;
+  border-left-width:1px;
+  border-right-color:#DBDBDB;
+  border-right-width:1px;
+  float:none;
+  padding-bottom:8px;
+  padding-left:12px;
+  padding-right:12px;
+  padding-top:8px;
+  position:relative;
+}
+.text-5 {
+  float:left;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:16px;
+  font-weight:700;
+  margin-left:0px;
+  margin-top:0px;
+  position:relative;
+}
+.text-6 {
+  float:left;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:14px;
+  position:relative;
+  right:0px;
+}
+.box-9 {
+  float:left;
+  height:125px;
+  margin-left:19px;
+  position:relative;
+  width:218px;
+}
+.box-10 {
+  background-color:#57e094;
+  border-color:#DBDBDB;
+  border-width:1px;
+  float:none;
+  height:84px;
+  margin-left:0px;
+  margin-top:0px;
+  position:relative;
+}
+.box-11 {
+  border-bottom-color:#DBDBDB;
+  border-bottom-width:1px;
+  border-left-color:#DBDBDB;
+  border-left-width:1px;
+  border-right-color:#DBDBDB;
+  border-right-width:1px;
+  float:none;
+  padding-bottom:8px;
+  padding-left:12px;
+  padding-right:12px;
+  padding-top:8px;
+  position:relative;
+}
+.text-7 {
+  float:left;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:16px;
+  font-weight:700;
+  margin-left:0px;
+  margin-top:0px;
+  position:relative;
+}
+.text-8 {
+  float:left;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:14px;
+  margin-right:0px;
+  margin-top:0px;
+  position:relative;
+  right:0px;
+}
+.box-12 {
+  float:left;
+  height:125px;
+  margin-left:19px;
+  position:relative;
+  width:218px;
+}
+.box-13 {
+  background-color:#d4d9b3;
+  float:none;
+  height:86px;
+  margin-left:0px;
+  margin-top:0px;
+  position:relative;
+}
+.box-14 {
+  border-bottom-color:#DBDBDB;
+  border-bottom-width:1px;
+  border-left-color:#DBDBDB;
+  border-left-width:1px;
+  border-right-color:#DBDBDB;
+  border-right-width:1px;
+  float:none;
+  padding-bottom:8px;
+  padding-left:12px;
+  padding-right:12px;
+  padding-top:8px;
+  position:relative;
+}
+.text-9 {
+  float:left;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:16px;
+  font-weight:700;
+  margin-left:0px;
+  margin-top:0px;
+  position:relative;
+}
+.text-10 {
+  float:left;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:14px;
+  position:relative;
+  right:0px;
+}
+
+</style>
+
+<div class="wrap">
+    <div class="board">
+        <div class="board_container" style='color:black'>
+            <div class="iu-text text-1">
+                <p>
+                    꿈지락 네트워크의 CI를 소개합니다.
+                </p>
+            </div>
+            <div class="iu-text ci-title_1">
+                <p>로고타입</p>
+            </div>
+            <div class="iu-box box-1">
+                <div class="iu-box box-2">
+                    <img class="iu-image image"
+                        src="../static/image/ggumjirak-or-ko-full.png">
+                    <div class="iu-text text-2">
+                        <p>정식명칭 가로형</p>
+                    </div>
+                </div>
+                <div class="iu-box box-3">
+                    <img class="iu-image image-1"
+                        src="../static/ggumjirak-or-ko.png">
+                    <div class="iu-text text-3">
+                        <p>일반 가로형</p>
+                    </div>
+                </div>
+                <div class="iu-box box-4">
+                    <img class="iu-image image-2"
+                        src="../static/ggumjirak-or-ko-short-01.png">
+                    <div class="iu-text text-4">
+                        <p>이미지형 로고</p>
+                    </div>
+                </div>
+            </div>
+            <div class="iu-text ci-title">
+                <p>컬러시스템</p>
+            </div>
+            <div class="iu-box box-5">
+                <div class="iu-box box-6">
+                    <div class="iu-box box-7"></div>
+                    <div class="iu-box box-8">
+                        <div class="iu-text text-5">
+                            <p>ggumjirak Orange</p>
+                        </div>
+                        <div class="iu-text text-6">
+                            <p>C8 M72 Y60 K0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="iu-box box-9">
+                    <div class="iu-box box-10"></div>
+                    <div class="iu-box box-11">
+                        <div class="iu-text text-7">
+                            <p>ggumjirak mint</p>
+                        </div>
+                        <div class="iu-text text-8">
+                            <p>C66 M12 Y33 K0</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="iu-box box-12">
+                    <div class="iu-box box-13"></div>
+                    <div class="iu-box box-14">
+                        <div class="iu-text text-9">
+                            <p>ggumjirak silver</p>
+                        </div>
+                        <div class="iu-text text-10">
+                            <p>C17 M15 Y30 K0</p>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>
+        </div>
+       
+    </div>
+</div>
+{% endblock %}

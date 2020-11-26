@@ -29,6 +29,12 @@ def board(request):
 def gallery(request):
     return render(request, 'gallery.html')
 
+def ci(request):
+    return render(request, 'ci.html')
+
+def greeting(request):
+    return render(request, 'greeting.html')
+
 # blog.html 페이지를 부르는 blog 함수
 def blog(request):
     # 모든 Post를 가져와 postlist에 저장합니다
