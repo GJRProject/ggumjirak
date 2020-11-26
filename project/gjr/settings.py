@@ -25,7 +25,10 @@ SECRET_KEY = ')ek(dvg1j(v%!s2z!cc1-b0$0d^puctxf4+rgx304ttbi2q43_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ggum.socreative.org']
+ALLOWED_HOSTS = [
+    'ggum.socreative.org',
+    '127.0.0.1'
+    ]
 
 
 # Application definition
