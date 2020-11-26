@@ -89,8 +89,11 @@ nav {
 
 /* 컨텐츠 영역 */
 .container .calname{
+  width: 100%;
   font-size: 30px;
   text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .section {
   width: 100%;
