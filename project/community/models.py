@@ -46,3 +46,19 @@ class History(models.Model):
 
     def __str__(self):
         return self.postname
+
+class Project(models.Model):
+    postname = models.CharField(max_length=50)
+    mainphoto = models.ImageField(upload_to='images/', blank=True, null=True)
+    
+
+    def __str__(self):
+        return self.postname
+
+class News(models.Model):
+    postname = models.CharField(max_length=50)
+    mainphoto = models.ImageField(upload_to='images/', blank=True, null=True)
+    
+
+    def __str__(self):
+        return self.postname

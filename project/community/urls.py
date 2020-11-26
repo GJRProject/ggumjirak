@@ -1,4 +1,6 @@
 from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
 from . import views
 
 urlpatterns = [
@@ -24,4 +26,10 @@ urlpatterns = [
 
     path('history/', views.history),
     path('history/<int:pk>/',views.history_posting, name='history_posting'),
-]
+
+    path('project/', views.project),
+    path('project/<int:pk>/',views.project_posting, name='project_posting'),
+
+    path('news/', views.news),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
