@@ -88,12 +88,6 @@ nav {
 }
 
 /* 컨텐츠 영역 */
-.container{
-  display: flex;
-  height: 100vh;
-  justify-content: center; /* 가로에서 가운데에 요소 배치 */
-  align-items: center; /* 세로에서 가운데에 요소를 배치 */
-}
 
 .container .calname{
   width: 100%;
