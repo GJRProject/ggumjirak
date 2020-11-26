@@ -24,24 +24,13 @@ body {
 }
 
 /* 헤더 영역 */
-nav {
-  width: 100%;
-  height: 120px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  text-align: center;
-  background: #007bff;
+.navbar-brand {
+  width: 50%;
+  padding: 6px 0;
 }
+
 .navbar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #263343!important;
-  box-sizing: border-box;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 .navbar .navbar-collapse .navbar-nav {
   display: flex;
@@ -219,40 +208,4 @@ footer .wrap_footer div.last {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* 반응형 영역 */
-/*
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 24px;
-  }
-  .navbar .navbar_menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .navbar .navbar_menu li {
-    width: 100%;
-    text-align: center;
-  }
-  .header .navbar .navbar_menu li:hover a {
-    background-color: #d49466;
-    border-radius: 4px;
-  }
-  .header .navbar .navbar_links {
-    display: none;
-    width: 100%;
-    justify-content: center;
-    padding-left: 0;
-  }
-  .header .navbar a.navbar_toogleBtn {
-    display: block;
-  }
-  .navbar_menu.active,
-  .navbar_links.active {
-    display: flex;
-  }
-}
-*/
+
