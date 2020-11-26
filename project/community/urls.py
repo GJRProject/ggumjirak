@@ -8,4 +8,5 @@ urlpatterns = [
     path('beta/', views.beta),
     path('gamma/', views.gamma),
     path('blog/', views.blog),
+    path('blog/<int:pk>/',views.posting, name='posting'),
 ]
