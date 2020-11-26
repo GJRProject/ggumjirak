@@ -33,6 +33,9 @@ def ci(request):
 def greeting(request):
     return render(request, 'greeting.html')
 
+def rounding(request):
+    return render(request, 'rounding.html')
+
 # blog.html 페이지를 부르는 blog 함수
 def blog(request):
     # 모든 Post를 가져와 postlist에 저장합니다
