@@ -22,6 +22,10 @@ html, body {
 body {
   padding-top: 120px;
 }
+.text-mint{
+  color:#52aeaf;
+}
+
 
 /* 헤더 영역 */
 .navbar {
