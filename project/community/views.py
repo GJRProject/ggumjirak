@@ -20,6 +20,9 @@ def beta(request):
 def gamma(request):
     return render(request, 'gamma.html')
 
+def contact(request):
+    return render(request, 'contact.html')
+
 # blog.html 페이지를 부르는 blog 함수
 def blog(request):
     # 모든 Post를 가져와 postlist에 저장합니다
