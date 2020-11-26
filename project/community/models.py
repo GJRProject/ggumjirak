@@ -10,3 +10,39 @@ class Post(models.Model):
 
     def __str__(self):
         return self.postname
+
+class Notice(models.Model):
+    postname = models.CharField(max_length=50)
+    mainphoto = models.ImageField(blank=True, null=True)
+    contents = models.TextField()
+    
+
+    def __str__(self):
+        return self.postname
+
+class Financial(models.Model):
+    postname = models.CharField(max_length=50)
+    mainphoto = models.ImageField(blank=True, null=True)
+    contents = models.TextField()
+    
+
+    def __str__(self):
+        return self.postname
+
+class Donations_Report(models.Model):
+    postname = models.CharField(max_length=50)
+    mainphoto = models.ImageField(blank=True, null=True)
+    contents = models.TextField()
+    
+
+    def __str__(self):
+        return self.postname
+
+class History(models.Model):
+    postname = models.CharField(max_length=50)
+    mainphoto = models.ImageField(blank=True, null=True)
+    contents = models.TextField()
+    
+
+    def __str__(self):
+        return self.postname
