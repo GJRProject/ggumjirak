@@ -34,13 +34,10 @@ body {
   align-items: center;
   margin: 0 auto;
 }
-.navbar .navbar-collapse .navbar-nav .nav-item {
-  padding-right: 10px;
-}
 .navbar .navbar-collapse .navbar-nav .nav-item a {
   color: #fff;
   font-size: 18px;
-  width: 160px;
+  width: 130px;
 }
 .navbar .navbar-collapse .navbar-nav .nav-item a:focus {
   outline: none;
@@ -136,44 +133,36 @@ body {
 
 
 /* 푸터 영역 */
+
 footer {
-  color: #fff;
-  text-align: center;
+  background-color: #d46354;
 }
-footer .wrap_footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 40px;
-  background-color: #263343;
-}
-footer .wrap_footer .footer_logo {
+footer  .footer_logo {
   font-size: 20px;
   padding-bottom: 18px;
 }
-footer .wrap_footer .footer_text {
+footer  .footer_text {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 1px;
   padding-bottom: 15px;
 }
-footer .wrap_footer .footer_address {
+footer  .footer_address {
   flex-direction: column;
   align-items: flex-start;
   padding-bottom: 25px;
 }
-footer .wrap_footer .footer_address ul {
+footer  .footer_address ul {
 
 }
-footer .wrap_footer .footer_address ul li {
+footer  .footer_address ul li {
   line-height: 1.7;
 }
-footer .wrap_footer .footer_address ul li span {
+footer  .footer_address ul li span {
   font-size: 14px;
   padding-left: 10px;
 }
-footer .wrap_footer div.last {
+footer  div.last {
   width: 100%;
   height: 50px;
   line-height: 50px;

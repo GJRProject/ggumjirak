@@ -24,7 +24,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow text-center">
-            
+            <div class="container">
             <a class="navbar-brand py-3" href="/">
                 <img src="{% static 'image/ggumjirak-or-ko.png' %}" width="120" alt="" loading="lazy">
             </a>
@@ -70,13 +70,12 @@
                 <li class="nav-item">
                     <a href="https://docs.google.com/forms/d/1UuNsNniqVeyFK47gLdGEMz1cfaqopDk_DWN99miV6z8/viewform?edit_requested=true" target="_blank" href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink4" aria-haspopup="true" aria-expanded="false">의뢰</a>
                 </li>
-              </ul>
-              <ul>
                 <li class="nav-item">
                     <a href="https://www.facebook.com/ggumjiraknetwork" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/ggumjirak/?igshid=naplinhvnn36" target="_blank"><i class="fab fa-instagram"></i></a>
                 <li>
               </ul>
+            </div>
             </div>
           </nav>
 
@@ -84,24 +83,22 @@
         {% endblock %}
 
             <!-- 푸터 영역  -->
-            <footer>
-                <div class="wrap_footer">
-                    <div class="footer_logo">
-                        <p>꿈지락 네트워크</p>
-                    </div>
-                    <div class="footer_text">
-                        <p>우리는<br>미래를 조금 더 아름답게 만드는<br>공공프로젝를 기획하고 실행하는 비영리단체입니다.</p>
-                    </div>
-                    <div class="footer_address">
-                        <ul>
-                            <li>tel.<span>02) 802 - 7737</span></li>
-                            <li>e-mail.<span>coop@youthblg.org</span></li>
-                            <li>address.<span>서울시 동작구 시흥대로</span></li>
-                        </ul>
-                    </div>
-                    <div class="last">
-                        2020 TECHSOUPKOREA
-                    </div>
+            <footer class="text-center text-white pt-5">                
+                <div class="footer_logo">
+                    <p>꿈지락 네트워크</p>
+                </div>
+                <div class="footer_text">
+                    <p>우리는<br>미래를 조금 더 아름답게 만드는<br>공공프로젝를 기획하고 실행하는 비영리단체입니다.</p>
+                </div>
+                <div class="footer_address">
+                    <ul>
+                        <li>tel.<span>02) 802 - 7737</span></li>
+                        <li>e-mail.<span>coop@youthblg.org</span></li>
+                        <li>address.<span>서울시 동작구 시흥대로</span></li>
+                    </ul>
+                </div>
+                <div class="last">
+                    2020 TECHSOUPKOREA
                 </div>
             </footer>
             <!-- //푸터 영역  -->
