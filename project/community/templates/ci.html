@@ -18,17 +18,25 @@
 }
 .container {
   padding-top:50px;
-  padding-bottom: 100px;
+  padding-bottom: 130px;
 }
 
 .text-1 {
   color:#494949;
-  float:none;
   font-family:'Noto Sans KR', sans-serif;
   font-size:30px;
   margin-left:0px;
   margin-top:70px;
-  position:relative;
+  text-align:center;
+}
+.text-2,
+.text-3,
+.text-4 {
+  color:#6D6D6D;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:14px;
+  margin-left:auto;
+  margin-right:auto;
   text-align:center;
 }
 .ci-title_1 {
@@ -44,7 +52,7 @@
   background-size:cover;
   border-color:#E9E9E9;
   border-width:1px;
-  height:300px;
+  height:250px;
   margin-left:0px;
   margin-top:15px;
   display: flex;
@@ -54,7 +62,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .iu-box ul li p {
   margin-top: 30px;
 }
@@ -63,9 +70,18 @@
   display: flex;
   justify-content: space-between;
 }
+.iu-text2 div.iu-box li {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.iu-text2 div.iu-box li p {
+  margin: 0;
+}
 .iu-text2 h4 {
   margin-bottom: 60px;
 }
+
 .box-2 {
   float:left;
   height:145px;
@@ -83,17 +99,6 @@
   position:relative;
   width:189px;
 }
-.text-2 {
-  bottom:0px;
-  color:#6D6D6D;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:14px;
-  left:0px;
-  margin-left:auto;
-  margin-right:auto;
-  right:0px;
-  text-align:center;
-}
 .box-3 {
   float:left;
   height:140px;
@@ -110,17 +115,6 @@
   position:relative;
   width:123px;
 }
-.text-3 {
-  bottom:0px;
-  color:#6D6D6D;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:14px;
-  left:0px;
-  margin-left:auto;
-  margin-right:auto;
-  right:0px;
-  text-align:center;
-}
 .box-4 {
   float:left;
   height:140px;
@@ -136,17 +130,6 @@
   margin-top:15px;
   position:relative;
   width:60px;
-}
-.text-4 {
-  bottom:0px;
-  color:#6D6D6D;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:14px;
-  left:0px;
-  margin-left:auto;
-  margin-right:auto;
-  right:0px;
-  text-align:center;
 }
 .ci-title {
   float:none;
@@ -184,7 +167,6 @@
   border-left-width:1px;
   border-right-color:#DBDBDB;
   border-right-width:1px;
-  float:none;
   padding-bottom:8px;
   padding-left:12px;
   padding-right:12px;
@@ -247,14 +229,18 @@
   margin-top:0px;
   position:relative;
 }
-.text-8 {
-  float:left;
+
+.text-8,
+.text-9 {
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:16px;
+  font-weight:700;
+  text-align: center;
+}
+.text-10 {
   font-family:'Noto Sans KR', sans-serif;
   font-size:14px;
-  margin-right:0px;
-  margin-top:0px;
-  position:relative;
-  right:0px;
+  text-align: center;
 }
 .box-12 {
   float:left;
@@ -284,22 +270,6 @@
   padding-right:12px;
   padding-top:8px;
   position:relative;
-}
-.text-9 {
-  float:left;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:16px;
-  font-weight:700;
-  margin-left:0px;
-  margin-top:0px;
-  position:relative;
-}
-.text-10 {
-  float:left;
-  font-family:'Noto Sans KR', sans-serif;
-  font-size:14px;
-  position:relative;
-  right:0px;
 }
 
 </style>
@@ -334,13 +304,13 @@
                 <div class="iu-box box-5">
                   <ul class="iu-box box-8">
                     <li><img src="/../static/image/green.PNG" alt=""></li>
-                    <li class=><p>ggumjirak Orange</p></li>
-                    <li class=><p>C8 M72 Y60 K0</p></li>
+                    <li class="iu-text text-9"><p>ggumjirak Orange</p></li>
+                    <li class="iu-text text-10"><p>C8 M72 Y60 K0</p></li>
                   </ul>
                   <ul class="iu-box box-8">
                     <li><img src="/../static/image/orange.PNG" alt=""></li>
-                    <li class=><p>ggumjirak mint</p></li>
-                    <li class=><p>C66 M12 Y33 K0</p></li>
+                    <li class="iu-text text-9"><p>ggumjirak mint</p></li>
+                    <li class="iu-text text-10"><p>C66 M12 Y33 K0</p></li>
                   </ul>
                   <ul class="iu-box box-8">
                     <li><img src="/../static/image/silver.PNG" alt=""></li>
@@ -348,41 +318,6 @@
                     <li class="iu-text text-10"><p>C17 M15 Y30 K0</p></li>
                   </ul>
                 </div>
-                  <!--
-                    <div class="iu-box box-6">
-                        <div class="iu-box box-7"></div>
-                        <div class="iu-box box-8">
-                            <div class="iu-text text-5">
-                                <p>ggumjirak Orange</p>
-                            </div>
-                            <div class="iu-text text-6">
-                                <p>C8 M72 Y60 K0</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="iu-box box-9">
-                        <div class="iu-box box-10"></div>
-                        <div class="iu-box box-11">
-                            <div class="iu-text text-7">
-                                <p>ggumjirak mint</p>
-                            </div>
-                            <div class="iu-text text-8">
-                                <p>C66 M12 Y33 K0</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="iu-box box-12">
-                        <div class="iu-box box-13"></div>
-                        <div class="iu-box box-14">
-                            <div class="iu-text text-9">
-                                <p>ggumjirak silver</p>
-                            </div>
-                            <div class="iu-text text-10">
-                                <p>C17 M15 Y30 K0</p>
-                            </div>
-                        </div>
-                    </div>
-                    -->
 
             </div>
     </div>
