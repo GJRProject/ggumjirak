@@ -24,14 +24,10 @@ body {
 }
 
 /* 헤더 영역 */
-.navbar-brand {
-  width: 50%;
-  padding: 6px 0;
-}
-
 .navbar {
   background-color: #263343!important;
 }
+.navbar-toggler{border: 0px;}
 .navbar .navbar-collapse .navbar-nav {
   display: flex;
   justify-content: space-between;
