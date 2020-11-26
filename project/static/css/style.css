@@ -37,11 +37,15 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  color: #fff;
   font-size: 18px;
 }
-.navbar-nav .nav-item {
-  padding: 0 1.2rem;  
+
+.navbar a {
+  color: #fff !important;
+}
+.navbar-nav .nav-item a {
+  padding: 0 2rem;  
+  line-height: 45px;
 }
 .navbar-nav .nav-item a:focus {
   outline: none;
