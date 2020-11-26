@@ -28,6 +28,12 @@
     </div>
     <div>
         <!-- 공간 라운딩 게시판 들어갈 공간 -->
+        {% for list in postlist %}
+            <ul>
+                <li>{{list.postname}}</a></li>
+                <li><img src = "{{list.mainphoto.url}}" alt="" height="200"></a></li>
+            </ul>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
