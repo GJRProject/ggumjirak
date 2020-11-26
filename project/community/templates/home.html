@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -29,12 +29,15 @@
         </a>
     </div>
 
-    <div id="section" class="section">
-        <div class="board_container">
+
+    <div class="row">
+        <div class="col-sm-4">
             <table class="table">
                 <thead>
                     <tr>
-                        <td><h4>공지사항</h4></td>
+                        <td>
+                            <h4>공지사항</h4>
+                        </td>
                         <td><a href="#" class="more" title="더보기"><i class="fas fa-plus"></i></a></td>
                     </tr>
                 </thead>
@@ -42,17 +45,21 @@
                     {% for list in noticelist %}
                     <tr class="table_item">
                         <td>
-                            <a href="notice/{{list.pk}}/"><img src="../../static/image/ggumjirak-bl-ko-short-02.png">{{list.postname}}</span>
+                            <a href="notice/{{list.pk}}/">
+                                {{list.postname}}
                         </td>
                     </tr>
                     {% endfor %}
                 </tbody>
             </table>
-
+        </div>
+        <div class="col-sm-4">
             <table class="table">
                 <thead>
                     <tr>
-                        <td><h4>재정보고</h4></td>
+                        <td>
+                            <h4>재정보고</h4>
+                        </td>
                         <td><a href="#" class="more" title="더보기"><i class="fas fa-plus"></i></a></td>
                     </tr>
                 </thead>
@@ -66,11 +73,14 @@
                     {% endfor %}
                 </tbody>
             </table>
-
+        </div>
+        <div class="col-sm-4">
             <table class="table">
                 <thead>
                     <tr>
-                        <td><h4>후원금 결산내역</h4></td>
+                        <td>
+                            <h4>후원금 결산내역</h4>
+                        </td>
                         <td><a href="#" class="more" title="더보기"><i class="fas fa-plus"></i></a></td>
                     </tr>
                 </thead>
@@ -85,6 +95,7 @@
                 </tbody>
             </table>
         </div>
+
     </div>
 </div>
 <!-- //컨텐츠 영역  -->
