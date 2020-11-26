@@ -22,7 +22,7 @@ html, body {
 body {
   padding-top: 120px;
 }
-.text-mint{
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .text-mint{
   color:#52aeaf;
 }
 
