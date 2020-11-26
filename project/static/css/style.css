@@ -28,18 +28,18 @@ body {
   background-color: #263343!important;
 }
 .navbar-toggler{border: 0px;}
-.navbar .navbar-collapse .navbar-nav {
+.navbar-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-}
-.navbar .navbar-collapse .navbar-nav .nav-item a {
   color: #fff;
   font-size: 18px;
-  width: 130px;
 }
-.navbar .navbar-collapse .navbar-nav .nav-item a:focus {
+.navbar-nav .nav-item {
+  padding: 0 1.2rem;  
+}
+.navbar-nav .nav-item a:focus {
   outline: none;
   box-shadow: none;
 }
