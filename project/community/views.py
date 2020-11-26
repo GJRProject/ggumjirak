@@ -14,12 +14,6 @@ def schedule(request):
 def donation(request):
     return render(request, 'donation.html')
 
-def beta(request):
-    return render(request, 'beta.html')
-
-def gamma(request):
-    return render(request, 'gamma.html')
-
 def contact(request):
     return render(request, 'contact.html')
 
