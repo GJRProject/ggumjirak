@@ -1,60 +1,6 @@
-<!DOCTYPE html>
-<html lang="ko" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{title}}</title>
+{% extends 'base.html' %}
 
-        <!-- css 스타일 -->
-        <link rel="stylesheet" href="{% static 'css/reset.css' %}">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-        <!-- 부트스트랩 링크 -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-        <!-- 웹 폰트-->
-        <script src="https://kit.fontawesome.com/2d323a629b.js"></script>
-        <script src="{% static 'js/main.js' %}" defer></script>
-
-    </head>
-    <body>
-        <div class="wrap">
-            <a href="#contents" class="skip">본문 바로가기</a>
-            <!-- 헤더 영역 -->
-            <header class="header">
-                <nav class="navbar">
-                    <!-- 메인 로고 -->
-                    <div class="navbar_logo">
-                        <a href="#"><img src="{% static 'image/ggumjirak-or-ko.png' %}" alt="홈 화면 로고 이미지"></a>
-                    </div>
-                    <!-- //메인 로고 -->
-                    <!-- 네비 메뉴 -->
-                    <ul class="navbar_menu">
-                        <li><a href="#">법인소개</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">프로젝트</a></li>
-                        <li><a href="#">후원</a></li>
-                    </ul>
-                    <!-- //네비 메뉴 -->
-                    <!-- sns 링크 아이콘 -->
-                    <ul class="navbar_links">
-                        <li>
-                            <a href="https://www.facebook.com/ggumjiraknetwork"><i class="fab fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/ggumjirak/?igshid=naplinhvnn36"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                    <!-- //sns 링크 아이콘 -->
-                    <!-- 햄버거 박스 -->
-                    <a href="#" class="navbar_toogleBtn">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                    <!-- //햄버거 박스 -->
-                </nav>
-            </header>
-            <!-- //헤더 영역  -->
-
+{% block content %}
             <!-- 컨텐츠 영역  -->
              <section>
              <div id="cont_cont">
@@ -85,33 +31,5 @@
                </div>
             </section>
             <!-- //컨텐츠 영역  -->
-
-            <!-- 푸터 영역  -->
-            <footer>
-                <div class="wrap_footer">
-                    <div class="footer_logo">
-                        <p>꿈지락 네트워크</p>
-                    </div>
-                    <div class="footer_text">
-                        <p>우리는<br>미래를 조금 더 아름답게 만드는<br>공공프로젝를 기획하고 실행하는 비영리단체입니다.</p>
-                    </div>
-                    <div class="footer_address">
-                        <ul>
-                            <li>tel.<span>02) 802 - 7737</span></li>
-                            <li>e-mail.<span>coop@youthblg.org</span></li>
-                            <li>address.<span>서울시 동작구 시흥대로</span></li>
-                        </ul>
-                    </div>
-                    <div class="last">
-                        2020 TECHSOUPKOREA
-                    </div>
-                </div>
-            </footer>
-            <!-- //푸터 영역  -->
-
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-        </div>
-    </body>
-</html>
+{% endblock %}
+            
