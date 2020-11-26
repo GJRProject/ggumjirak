@@ -13,14 +13,11 @@ ul, li {
   list-style: none;
 }
 /* 폰트 초기화 */
-a, p, div, h1, h2, h3 h4, h5, h6, ul, li {
-  text-decoration: none;
+a, a:hover, p, div, h1, h2, h3 h4, h5, h6, ul, li {
+  text-decoration: none !important;
 }
-header, .board_tit, .footer_logo, table.h4, .nav-item a {
 
-}
 section, .board_container, footer {
-
   font-size: 15px;
 }
 * {
