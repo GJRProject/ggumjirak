@@ -6,7 +6,7 @@
         <div class="board_container" style='color:black'>
             <h1 style='color:black'>공지사항 페이지입니다</h1>
             <table>
-                {% for list in postlist %}
+                {% for list in noticelist %}
                     <ul>
                         <li><a href="{{list.pk}}/" style='color:black'>{{list.postname}}</a></li>
                     </ul>
