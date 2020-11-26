@@ -1,19 +1,45 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="wrap">
-    <div class="board">
-        <div class="board_container" style='color:black'>
-            <h1 style='color:black'>재정보고 페이지입니다</h1>
-            <table class="table table-hover">
-                {% for list in financiallist %}
-                    <ul>
-                        <li><a href="{{list.pk}}/" style='color:black'>{{list.postname}}</a></li>
-                    </ul>
-                {% endfor %}
-                </table>
-        </div>
-       
-    </div>
-</div>
-{% endblock %}
+<div class="container">
+    <h1 class=".text-mint mb-3">재정보고</h1>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">번호</th>
+          <th scope="col">제목</th>
+          <th scope="col">글쓴이</th>
+          <th scope="col">조회수</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for list in financiallist %}
+        <tr>
+          <th scope="row">1</th>
+          <td><a href="{{list.pk}}/">{{list.postname}}</a></td>
+          <td>관리자</td>
+          <td>12</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  
+  
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+  </div>
+  
+  {% endblock %}
