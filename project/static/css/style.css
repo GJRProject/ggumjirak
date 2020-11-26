@@ -47,7 +47,7 @@ body {
   box-shadow: none;
 }
 .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
-  color: #007bff;
+  color: #53aeaf;
 }
 
 /* 헤더 세부 메뉴 드롭다운 영역 */
@@ -55,8 +55,7 @@ body {
   width: 140px;
   background-color: #263343;
   line-height: 30px;
-  border-color: #263343;
-  margin-top: 30px;
+  border:0;
 }
 .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu a {
   font-size: 14px;
@@ -69,7 +68,7 @@ body {
   color: #fff;
 }
 .navbar .navbar-collapse ul:last-child li a:hover {
-  color: blue;
+  color: #53aeaf;
 }
 
 /* 컨텐츠 영역 */
@@ -80,27 +79,6 @@ body {
   text-align: left;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.section {
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.section .board_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 1110px;
-  margin: 0 auto;
-}
-.section .board_container .table {
-  width: 80%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-collapse: collapse;
-  display: flex;
-  margin: 0 auto;
 }
 
 /* 컨텐츠 타이틀 영역 */
@@ -204,4 +182,9 @@ footer .wrap_footer div.last {
   background: rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 767.98px) { 
 
+  .dropdown-menu{
+    text-align: center;
+  }
+ }
