@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
 /* 여백 초기화 */
-div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+table, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
   margin: 0;
   padding: 0;
 }
@@ -16,11 +16,11 @@ ul, li {
 a, p, div, h1, h2, h3 h4, h5, h6, ul, li {
   text-decoration: none;
 }
-header, .board_tit, .footer_logo {
-  font-family: 'Nanum Pen Script', cursive;
+header, .board_tit, .footer_logo, table.h4, .nav-item a {
+  font-family: 'KoPub Dotum';
 }
 section, .board_container, footer {
-  font-family: 'Nanum Gothic Coding', monospace;
+  font-family: 'KoPub Dotum';
   font-size: 15px;
 }
 
