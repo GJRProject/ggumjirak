@@ -23,7 +23,7 @@
 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow p-3 mb-5 bg-white rounded">
 
             <a class="navbar-brand" href="/">
                 <img class="img-fluid" src="{% static 'image/ggumjirak-or-ko.png' %}" alt="홈 화면 로고 이미지">
@@ -42,11 +42,11 @@
                         <a class="dropdown-item" href="/ci">- CI 소개</a>
                         <a class="dropdown-item" href="/history">- 연혁</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/schedule">- 스케줄</a>
+                        <a class="dropdown-item" href="/schedule">- 캘린더</a>
                         <a class="dropdown-item" href="/contact">- contact</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/financial">재정보고</a>
-                        <a class="dropdown-item" href="#">공간 라운딩</a>
+                        <a class="dropdown-item" href="/rounding">공간 라운딩</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -54,11 +54,11 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="/notice">공지사항</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">소식지 & 연구</a>
+                        <a class="dropdown-item" href="/news">소식지 & 연구</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="/gallery" href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink4" aria-haspopup="true" aria-expanded="false">프로젝트</a>
+                    <a href="/project" href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink4" aria-haspopup="true" aria-expanded="false">프로젝트</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="btn" href="#" role="button" type="button" id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">후원</a>

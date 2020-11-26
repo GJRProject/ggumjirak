@@ -17,11 +17,14 @@ a, p, div, h1, h2, h3 h4, h5, h6, ul, li {
   text-decoration: none;
 }
 header, .board_tit, .footer_logo, table.h4, .nav-item a {
-  font-family: 'KoPub Dotum';
+
 }
 section, .board_container, footer {
-  font-family: 'KoPub Dotum';
+
   font-size: 15px;
+}
+* {
+  font-family: 'KoPub Dotum';
 }
 
 section ul li {

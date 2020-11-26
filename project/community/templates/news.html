@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="wrap">
+    <div class="board">
+        <div class="board_container" style='color:black'>
+            <h1 style='color:black'>소식지&연구 페이지입니다</h1>
+            <table>
+                {% for list in postlist %}
+                    <ul>
+                        <li>{{list.postname}}</a></li>
+                        <li><img src = "{{list.mainphoto.url}}" alt="" height="200"></a></li>
+                    </ul>
+                {% endfor %}
+                </table>
+        </div>
+       
+    </div>
+</div>
+{% endblock %}

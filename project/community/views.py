@@ -1,9 +1,5 @@
 from django.shortcuts import render
-from .models import Post
-from .models import Financial
-from .models import Notice
-from .models import Donations_Report
-from .models import History
+from .models import *
 # Create your views here.
 
 # 메인화면 
@@ -35,6 +31,12 @@ def ci(request):
 
 def greeting(request):
     return render(request, 'greeting.html')
+
+def rounding(request):
+    # 모든 Post를 가져와 postlist에 저장합니다
+    postlist = Round.objects.all()
+    # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
+    return render(request, 'rounding.html', {'postlist':postlist})
 
 # blog.html 페이지를 부르는 blog 함수
 def blog(request):
@@ -97,3 +99,22 @@ def history_posting(request, pk):
     post = History.objects.get(pk=pk)
     # posting.html 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
     return render(request, 'posting.html', {'post':post})
+
+
+def project(request):
+    # 모든 Post를 가져와 postlist에 저장합니다
+    postlist = Project.objects.all()
+    # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
+    return render(request, 'project.html', {'postlist':postlist})
+
+def project_posting(request, pk):
+    # 게시글(Post) 중 pk(primary_key)를 이용해 하나의 게시글(post)를 검색
+    post = Project.objects.get(pk=pk)
+    # posting.html 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
+    return render(request, 'gallery_posting.html', {'post':post})
+
+def news(request):
+    # 모든 Post를 가져와 postlist에 저장합니다
+    postlist = News.objects.all()
+    # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
+    return render(request, 'news.html', {'postlist':postlist})
