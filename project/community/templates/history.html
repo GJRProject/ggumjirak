@@ -6,12 +6,42 @@
         <div class="board_container" style='color:black'>
             <h1 style='color:black'>연혁 페이지입니다</h1>
             <table>
-                {% for list in postlist %}
+                {% for list in posts %}
                     <ul>
                         <li><a href="{{list.pk}}/" style='color:black'>{{list.postname}}</a></li>
                     </ul>
                 {% endfor %}
                 </table>
+
+                {% if posts.has_previous %}
+    <a href="?page=1">맨 앞으로</a>
+    <a href="?page={{posts.previous_page_number}}">이전으로</a>
+    {% endif %}
+    <span>{{posts.number}}</span>
+    <span>/</span>
+    <span>{{posts.paginator.num_pages}}</span>
+    {% if posts.has_next %}
+    <a href="?page={{posts.next_page_number}}">다음으로</a>
+    <a href="?page={{posts.paginator.num_pages}}">맨 뒤로</a>
+    {% endif %}
+
+    <!--
+  <ul class="pagination justify-content-center pt-4">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+  -->
         </div>
        
     </div>

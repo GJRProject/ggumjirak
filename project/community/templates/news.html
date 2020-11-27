@@ -6,7 +6,7 @@
             <h4 class=".text-mint mb-4"><b>소식지 & 연구</b></h4>
 
                 <div class="row">
-                    {% for list in postlist %}
+                    {% for list in posts %}
                     <div class="col-md-4">
                       <div class="card mb-4 shadow-sm">
                         <a href="{{list.pk}}/" style='color:black'>
@@ -19,6 +19,18 @@
                     </div>
                     {% endfor %}
                 </div>
+
+                {% if posts.has_previous %}
+                <a href="?page=1">맨 앞으로</a>
+                <a href="?page={{posts.previous_page_number}}">이전으로</a>
+                {% endif %}
+                <span>{{posts.number}}</span>
+                <span>/</span>
+                <span>{{posts.paginator.num_pages}}</span>
+                {% if posts.has_next %}
+                <a href="?page={{posts.next_page_number}}">다음으로</a>
+                <a href="?page={{posts.paginator.num_pages}}">맨 뒤로</a>
+                {% endif %}
     </div>
 </div>
 {% endblock %}

@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from django.core.paginator import Paginator
 from .models import *
+
 # Create your views here.
 
 # 메인화면 
@@ -36,8 +38,12 @@ def greeting(request):
 def rounding(request):
     # 모든 Post를 가져와 postlist에 저장합니다
     postlist = Round.objects.all()
-    # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
-    return render(request, 'rounding.html', {'postlist':postlist})
+    paginator = Paginator(postlist, 6)
+    page = request.GET.get('page')
+    posts = paginator.get_page(page)
+
+    return render(request, 'rounding.html', {'postlist': postlist, 'posts':posts})
+
 
 # blog.html 페이지를 부르는 blog 함수
 def blog(request):
@@ -46,29 +52,45 @@ def blog(request):
     # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
     return render(request, 'blog.html', {'postlist':postlist})
 
+
 def notice(request):
     # 모든 Post를 가져와 postlist에 저장합니다
     noticelist = Notice.objects.all()
-    # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
-    return render(request, 'notice.html', {'noticelist':noticelist})
+    paginator = Paginator(noticelist, 10)
+    page = request.GET.get('page')
+    posts = paginator.get_page(page)
+
+    return render(request, 'notice.html', {'noticelist': noticelist, 'posts':posts})
+
+
 
 def financial(request):
     # 모든 Post를 가져와 postlist에 저장합니다
     financiallist = Financial.objects.all()
-    # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
-    return render(request, 'financial.html', {'financiallist':financiallist})
+    paginator = Paginator(financiallist, 10)
+    page = request.GET.get('page')
+    posts = paginator.get_page(page)
+
+    return render(request, 'financial.html', {'financiallist': financiallist, 'posts':posts})
 
 def history(request):
     # 모든 Post를 가져와 postlist에 저장합니다
     historylist = History.objects.all()
-    # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
-    return render(request, 'history.html', {'historylist':historylist})
+    paginator = Paginator(historylist, 10)
+    page = request.GET.get('page')
+    posts = paginator.get_page(page)
+
+    return render(request, 'history.html', {'historylist': historylist, 'posts':posts})
 
 def donat_report(request):
     # 모든 Post를 가져와 postlist에 저장합니다
     donatlist = Donations_Report.objects.all()
-    # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
-    return render(request, 'donat_report.html', {'donatlist':donatlist})
+    paginator = Paginator(donatlist, 10)
+    page = request.GET.get('page')
+    posts = paginator.get_page(page)
+
+    return render(request, 'donat_report.html', {'donatlist': donatlist, 'posts':posts})
+
 
 # blog의 게시글(posting)을 부르는 posting 함수
 def posting(request, pk):
@@ -105,8 +127,11 @@ def history_posting(request, pk):
 def project(request):
     # 모든 Post를 가져와 postlist에 저장합니다
     postlist = Project.objects.all()
-    # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
-    return render(request, 'project.html', {'postlist':postlist})
+    paginator = Paginator(postlist, 6)
+    page = request.GET.get('page')
+    posts = paginator.get_page(page)
+
+    return render(request, 'project.html', {'postlist': postlist, 'posts':posts})
 
 def project_posting(request, pk):
     # 게시글(Post) 중 pk(primary_key)를 이용해 하나의 게시글(post)를 검색
@@ -117,5 +142,9 @@ def project_posting(request, pk):
 def news(request):
     # 모든 Post를 가져와 postlist에 저장합니다
     postlist = News.objects.all()
-    # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
-    return render(request, 'news.html', {'postlist':postlist})
+    paginator = Paginator(postlist, 6)
+    page = request.GET.get('page')
+    posts = paginator.get_page(page)
+
+    return render(request, 'news.html', {'postlist': postlist, 'posts':posts})
+
