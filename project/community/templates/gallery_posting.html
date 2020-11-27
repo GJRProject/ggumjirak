@@ -3,13 +3,18 @@
 {% block content %}
 <div class="wrap">
     <div class="board">
-        <div class="board_container" style='color:black'>
-            <h1>게시글 개별 페이지입니다</h1>
-            <p style='color:black'>{{post.postname}}</p>
-            <img src = "{{post.mainphoto.url}}" alt="">
-            <a href="/project/">목록</a>
+        <div class="container" style='color:black'>
+            <div class="card">
+                <h5 class="card-header">{{post.postname}}</h5>
+                <div class="card-body">
+                    <img class="bd-placeholder-img card-img-top" src="{{post.mainphoto.url}}" alt="" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                    <p class="card-text">{{post.contents}}</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+            <a href="/project/"><button class="btn btn-secondary btn-sm" type="button">목록</button></a>
+            </div>
         </div>
-       
     </div>
 </div>
 {% endblock %}
