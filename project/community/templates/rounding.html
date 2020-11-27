@@ -36,6 +36,20 @@
     </div>
     <div>
         <!-- 공간 라운딩 게시판 들어갈 공간 -->
+        <div class="row">
+            {% for list in postlist %}
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="{{list.pk}}/" style='color:black'>
+                    <img class="bd-placeholder-img card-img-top" src="{{list.mainphoto.url}}" alt="" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                </a>
+                <div class="card-body">
+                  <a class="card-text pb-3" href="{{list.pk}}/" style='color:black'>{{list.postname}}</a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
 {% endblock %}
