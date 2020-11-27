@@ -26,6 +26,9 @@ body {
   color:#52aeaf;
 }
 
+/* 폰트 */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); /*나눔고딕*/
 
 /* 헤더 영역 */
 .navbar {
