@@ -16,10 +16,10 @@
     <tbody>
       {% for list in posts %}
       <tr>
-        <th scope="row">1</th>
+        <th scope="row">{{list.id}}</th>
         <td><a href="{{list.pk}}/">{{list.postname}}</a></td>
         <td>관리자</td>
-        <td>12</td>
+        <td>{{list.pub_date}}</td>
       </tr>
       {% endfor %}
     </tbody>
