@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'ggum.socreative.org',
+    'ggumjirak.org',
+    'www.ggumjirak.org',
     '127.0.0.1'
     ]
 
