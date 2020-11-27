@@ -7,7 +7,8 @@ def home(request):
     noticelist = Notice.objects.all()[:5]
     financiallist = Financial.objects.all()[:5]
     donatlist = Donations_Report.objects.all()[:5]
-    return render(request, 'home.html', {'noticelist':noticelist, 'financiallist':financiallist, 'donatlist':donatlist})
+    projectlist = Project.objects.all()[:3]
+    return render(request, 'home.html', {'noticelist':noticelist, 'financiallist':financiallist, 'donatlist':donatlist, 'projectlist':projectlist})
 
 # 스케쥴
 def schedule(request):

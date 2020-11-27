@@ -9,15 +9,23 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active"
-                style="background-image: url('/../static/image/fair-540126_1280.jpg'); background-size: cover; background-position: center; height: 400px;">
+            {% for list in projectlist %}
+            {% if list.pk == 4 %}
+            <div class="carousel-item active" 
+                style="background-image: url('{{list.mainphoto.url}}'); background-size: cover; background-position: center; height: 400px;">
             </div>
+            {% else %}
+            
             <div class="carousel-item"
-                style="background-image: url('/../static/image/carew-castle-2305685_1280.jpg'); background-size: cover; background-position: center; height: 400px;">
+                style="background-image: url('{{list.mainphoto.url}}'); background-size: cover; background-position: center; height: 400px;">
             </div>
+            <!--
             <div class="carousel-item"
                 style="background-image: url('/../static/image/chicago-690364_1280.jpg'); background-size: cover; background-position: center; height: 400px;">
             </div>
+            -->
+            {% endif %}
+            {% endfor %}
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
