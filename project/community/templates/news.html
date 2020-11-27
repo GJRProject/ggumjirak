@@ -2,19 +2,25 @@
 
 {% block content %}
 <div class="wrap">
-    <div class="board">
-        <div class="board_container" style='color:black'>
-            <h1 style='color:black'>소식지&연구 페이지입니다</h1>
-            <table>
-                {% for list in postlist %}
-                    <ul>
-                        <li>{{list.postname}}</a></li>
-                        <li><img src = "{{list.mainphoto.url}}" alt="" height="200"></a></li>
-                    </ul>
-                {% endfor %}
-                </table>
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <h4 class=".text-mint mb-3"><b>소식지 & 연구</b></h4>
+
+                <div class="row">
+                    {% for list in postlist %}
+                    <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <a href="{{list.pk}}/" style='color:black'>
+                            <img class="bd-placeholder-img card-img-top" src="{{list.mainphoto.url}}" alt="" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                        </a>
+                        <div class="card-body">
+                          <a class="card-text pb-3" href="{{list.pk}}/" style='color:black'>{{list.postname}}</a>
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                </div>
         </div>
-       
     </div>
 </div>
 {% endblock %}
