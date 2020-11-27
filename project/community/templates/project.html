@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="wrap">
-    <div class="album py-5 bg-light">
-        <div class="container">
-            <h4 class=".text-mint mb-3"><b>프로젝트</b></h4>
+<div class="container">
+    <div class="album py-5">
+            <h4 class=".text-mint mb-4"><b>프로젝트</b></h4>
 
                 <div class="row">
                     {% for list in postlist %}
@@ -20,7 +19,6 @@
                     </div>
                     {% endfor %}
                 </div>
-        </div>
     </div>
 </div>
 {% endblock %}
