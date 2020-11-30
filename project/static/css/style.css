@@ -63,7 +63,6 @@ body {
 
 /* 헤더 세부 메뉴 드롭다운 영역 */
 .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
-  width: 140px;
   background-color: #263343;
   line-height: 30px;
   border:0;
@@ -192,6 +191,6 @@ footer  div.last {
   }
 
   .navbar-nav .nav-item a {
-    padding: 0;
-    display: inline-block;}
+    padding: inherit;
+    display: block;}
  }
