@@ -192,5 +192,6 @@ footer  div.last {
   }
 
   .navbar-nav .nav-item a {
-    padding: 0;}
+    padding: 0;
+    display: inline-block;}
  }
