@@ -190,4 +190,7 @@ footer  div.last {
   .dropdown-menu{
     text-align: center;
   }
+
+  .navbar-nav .nav-item a {
+    padding: 0;}
  }
