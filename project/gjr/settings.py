@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     'ggumjirak.org',
     'www.ggumjirak.org',
     '127.0.0.1'
+    '34.64.75.228'
     ]
 
 
