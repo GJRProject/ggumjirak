@@ -8,7 +8,3 @@ toogleBtn.addEventListener('click', () => {
   links.classList.toggle('active');
 });
 */
-
-$('.carousel').carousel({
-  interval: 2000
-});

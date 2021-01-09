@@ -2,29 +2,24 @@
 
 {% block content %}
 <div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+
+    <div id="carouselControls" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-inner">
             {% for list in projectlist %}
-            <div class="carousel-item {% if forloop.first %} active{% endif %}" 
+            <div class="carousel-item {% if forloop.first %}active{% endif %}" 
                 style="background-image: url('{{list.mainphoto.url}}'); background-size: cover; background-position: center; height: 400px;">
             </div>
             {% endfor %}
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </a>
     </div>
-
 
     <div class="row">
         <div class="col-sm-6">
