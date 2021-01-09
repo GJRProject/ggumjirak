@@ -1,38 +1,29 @@
 @charset "UTF-8";
 
-/*
-:root {
-  --text-color:
-  --background-color:
-  --accent-color:
-}
-
-a {
-  color: var(text-color);
-}
-*/
-
 /* 전체 영역 */
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+* {
+  font-family: Noto Sans KR,sans-serif;
+  text-decoration: none !important;
+  word-break: keep-all;
 }
-body {
+
+body{
   padding-top: 120px;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .text-mint{
   color:#52aeaf;
 }
 
-/* 폰트 */
-
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); /*나눔고딕*/
+.wrap{
+  min-height: 70vh;
+}
+.h-section{
+  padding-top: 120px;
+}
 
 /* 헤더 영역 */
 .navbar {
-  background-color: #263343!important;
+  background-color: #d46353 !important;
 }
 .navbar-toggler{border: 0px;}
 .navbar-nav {
@@ -48,7 +39,7 @@ body {
 }
 
 .navbar a:hover {
-  color: #53aeaf !important;
+  color: #ffffffcf !important;
 }
 
 .navbar-nav .nav-item a {
@@ -63,22 +54,24 @@ body {
 
 /* 헤더 세부 메뉴 드롭다운 영역 */
 .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
-  background-color: #263343;
   line-height: 30px;
   border:0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu a {
   font-size: 14px;
+  color: #d46353 !important;
 }
 .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu a:hover {
-
+  background: #d46353 !important;
+  color: #fff !important;
 }
 .navbar .navbar-collapse ul:last-child li a {
   padding-right: 10px;
   color: #fff;
 }
 .navbar .navbar-collapse ul:last-child li a:hover {
-  color: #53aeaf;
+  color: #ddd;
 }
 
 /* 컨텐츠 영역 */
@@ -91,100 +84,44 @@ body {
   margin-bottom: 20px;
 }
 
-/* 컨텐츠 타이틀 영역 */
-.section .board_container .table thead {
-  width: 220px;
-}
-.section .board_container .table thead tr {
-  display: flex;
-  justify-content: space-between;
-}
-.section .board_container .table thead tr td {
-  border-top: 0;
-}
-.section .board_container .table thead tr td:nth-child(1) {
-  width:
-}
-.section .board_container .table thead tr td:nth-child(2) {
-  margin-right: 10px;
-}
-.section .board_container .table thead tr h4 {
-  font-size: 20px;
-}
-.section .board_container .table thead tr td:last-child {
-  right: 0;
+#list{
+  top:120px;
+  margin-top: 120px;
 }
 
-/* 컨텐츠 게시판 영역 */
-.section .board_container .table tbody {
-  width: 700px;
-}
-.section .board_container .table tbody tr {
-  display: flex;
-  justify-content: space-between;
-}
-.section .board_container .table tbody tr td a {
-  font-size: 15px;
-  color: #000;
-}
-.section .board_container .table tbody .table_item td {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.section .board_container .table tbody .table_item:nth-child(1) td {
-  border-top: 0;
-}
-.section .board_container .table tr a img {
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
-}
-.label-img{
-  width: 30px;
-}
 
 
 /* 푸터 영역 */
 
-footer {
-  background-color: #d46354;
-}
-footer  .footer_logo {
-  font-size: 20px;
-  padding-bottom: 18px;
-}
-footer  .footer_text {
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  padding-bottom: 15px;
-}
-footer  .footer_address {
-  flex-direction: column;
-  align-items: flex-start;
-  padding-bottom: 25px;
-}
-footer  .footer_address ul {
 
+footer  .info {
+  line-height: 1.6rem;
 }
-footer  .footer_address ul li {
-  line-height: 1.7;
-}
-footer  .footer_address ul li span {
-  font-size: 14px;
-  padding-left: 10px;
-}
-footer  div.last {
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  font-size: 13px;
-  letter-spacing: 1.5px;
+
+footer  .last {
   background: rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) {
+  
+  .tour-desc{
+    height: 0;
+    overflow: visible;
+    z-index: 1;
+    position: relative;
+  }
+ }
+
+
+@media (max-width: 991px) {
+  .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+    background-color: #d46353 !important;
+    box-shadow: none;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu a {
+    font-size: 14px;
+    color: #fff !important;
+  }
 
   .dropdown-menu{
     text-align: center;

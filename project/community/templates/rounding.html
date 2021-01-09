@@ -1,44 +1,78 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-<div class="container">
-    <div class="my-5 py-4">
-        <h1 class="my-3 text-mint font-weight-bolder">
-            사단법인 꿈지락네트워크의 <br>정책사례 투어에 참여하세요!
-        </h1>
-        <div class="row">
-            <div class="col-sm-6">
-                <p class="mt-3">
-                    우리는 2012년부터 서울특별시 서남권역을 중심으로 청년 주도의 혁신프로젝트를 수행해왔습니다.<br>
-                    정책사례 투어는 관악, 구로, 금천에서 우리가 운영하고 있는 5개의 공공공간을 방문하고 진로, 교육, 청년, 도시재생이 구체화된 사례를 체험해볼 수 있도록 구성되어있습니다.<br>
-                    당사자이자 정책의 체화된 매뉴얼인 우리 구성원의 소개를 바탕으로, 청년이 더 나은 사회를 만들어가는 책임있는 구성원으로서 지역의 변화를 만들어가는 과정을 확인하세요!</p>
-                <p class="mt-3">
-                    정책사례 투어는 사전 예약제로 운영되며, 코로나19 확산방지를 위해 방역수칙을 철저히 준수합니다.</p><br>
-            </div>
-            <div class="col-sm-6">
-                <p class="mt-3" style="font-weight:bold;">
-                    ● 운영일시</p>
-                - 평일 오후 6시 이전, 사전예약 및 개별연락을 통한 일정 확인 필수!
-                <p class="mt-3" style="font-weight:bold;">
-                    ● 소요시간</p>
-                - A코스 : 1개 자치구 공공공간 방문, 청년정책사례 및 꿈지락네트워크 소개, 1시간<br>
-                - B코스 : 꿈지락네트워크 전체 사업소개, 2시간 30분
-                <p class="mt-3" style="font-weight:bold;">
-                    ● 인원 및 참가비용</p>
-                - 5명 ~ 15명 (1인 1만원)<br>
-                - 참가하시는 분들께는 감성폭발 꿈지락 굿즈를 선물로 드립니다.<br>
-                *코로나19 상황으로 변동될 수 있습니다.
-                <p class="mt-3" style="font-weight:bold;"></p>
-                ● 예약방법<br>
-                - 온라인예약 : <a href="https://docs.google.com/forms/d/1UuNsNniqVeyFK47gLdGEMz1cfaqopDk_DWN99miV6z8/edit">구글설문지</a><br>
-                <p class="mt-3" style="font-weight:bold;">
-                    ● 문의</p>
-                - 꿈지락네트워크 본사 ☎ 02)802-7737<br>
-            </div>
+<div class="container mb-5">
+    <div class="row tour-desc">
+        <div class="col-sm-6">
+            <h1 class="display-5">
+                꿈지락네트워크 
+                <br>
+                정책사례 투어에
+                <br>
+                참여하세요!
+            </h1>
+        </div>
+        <div class="col-sm-6">
+            <p>
+                우리는 2012년부터 서울특별시 서부권역을 중심으로 청년 주도의 혁신프로젝트를 수행해왔습니다.
+                정책사례 투어는 우리가 기획과 운영을 맡은 공간들을 방문하고 진로, 교육, 청년, 도시재생이 구체화된 사례를 체험해볼 수 있도록 구성되어있습니다.
+                당사자이자 정책의 체화된 매뉴얼인 우리 구성원의 소개를 바탕으로,
+                청년이 더 나은 사회를 만들어가는 책임있는 구성원으로서 지역의 변화를 만들어가는 과정을 확인하세요!
+            </p>
+        </div>
+        
+    </div>
+    <img src="{% static 'image/tour.jpg' %}" alt="" class="img-fluid d-block m-auto" loading="lazy">
+    <div class="row">
+
+        <div class="col col-md-8 offset-md-2">
+    
+            <dl class="row">
+                <dt class="col-sm-3">운영일시 </dt>
+                <dd class="col-sm-9">
+                    평일 오후 6시 이전, 사전예약 및 개별연락을 통한 일정 확인 필수! </dd>
+        
+                <dt class="col-sm-3">소요시간</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-2">A코스</dt>
+                        <dd class="col-sm-10">1개 자치구 투어, 청년정책사례 및 꿈지락네트워크 소개, 1시간</dd>
+                    </dl>
+                    <dl class="row">
+                        <dt class="col-sm-2">B코스</dt>
+                        <dd class="col-sm-10">꿈지락네트워크 전체 사업소개, 2시간 30분</dd>
+                    </dl>
+                </dd>
+                <dt class="col-sm-3">인원 및 참가비용 </dt>
+                <dd class="col-sm-9">
+                    5 ~ 15명 (1인 1만원)
+                    <br>
+                    <small>
+                        참가하시는 분들께는 감성폭발 꿈지락 굿즈를 선물로 드립니다.
+                    </small>
+                </dd>
+                <dt class="col-sm-3">예약방법</dt>
+                <dd class="col-sm-9">
+                    <a href="https://url.kr/ErxAGW " target="_blank">온라인예약</a>
+                </dd>
+                <dt class="col-sm-3">문의</dt>
+                <dd class="col-sm-9">
+                    꿈지락네트워크 본사 ☎ 02)802-7737
+                </dd>
+        
+            </dl>
+            <p class="small">
+        
+                감염병 확산으로 인한 사회적 거리두기 격상시 운영되지 않습니다.
+                <br>
+                정책사례 투어는 사전 예약제로 운영되며, 코로나19 확산방지를 위해 방역수칙을 철저히 준수합니다.
+            </p>
         </div>
     </div>
-    <div>
-        <!-- 공간 라운딩 게시판 들어갈 공간 -->
+</div>
+<div>
+    <!-- 공간 라운딩 게시판 들어갈 공간 
         <div class="row">
             {% for list in posts %}
             <div class="col-md-4">
@@ -64,7 +98,8 @@
                 {% if posts.has_next %}
                 <a href="?page={{posts.next_page_number}}">다음으로</a>
                 <a href="?page={{posts.paginator.num_pages}}">맨 뒤로</a>
-                {% endif %}
-    </div>
+        {% endif %}
+        -->
+
 </div>
 {% endblock %}

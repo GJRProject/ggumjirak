@@ -3,53 +3,35 @@
 {% block content %}
 <!-- 컨텐츠 영역  -->
 <div class="container">
-        <div class="text-center my-5 py-4">
-                     <div class="column col1">
-                         <h4 class="pb-4"><b>찾아오시는 길</b></h4>
-                         <img src="../../static/image/contact.png" alt="약도" width="100%" height="100%">
-                      </div>
-                      <div class="row text-center">
-                        <div class="col-md-3">
-                          <img src="/../static/image/" alt="" class="img-fluid">
-                          <p class="pb-3"><b>Address</b></p>
-                          <p>서울시 동작구 시흥대로 596<br>(신라스테이해링턴타워), 213호</p>
-                        </div>
-                        <div class="col-md-3">
-                          <img src="/../static/image/" alt="" class="img-fluid">
-                          <p class="pb-3"><b>Tel</b></p>
-                          <p>02-802-7737</p>
-                        </div>
-                        <div class="col-md-3">
-                          <img src="/../static/image/" alt="" class="img-fluid">
-                          <p class="pb-3"><b>Fax</b></p>
-                          <p>02.852.7737</p>
-                        </div>
-                        <div class="col-md-3">
-                          <img src="/../static/image/" alt="" class="img-fluid">
-                          <p class="pb-3"><b>E-mail</b></p>
-                          <p>ggumjirak@gmail.com</p>
-                        </div>
-                      </div>
-                      <!--
-                      <div class="column col2">
-                        <p><b>Address</b></p><br>
-                        <p>서울시 동작구 시흥대로 596(신라스테이해링턴타워), 213호</p><br>
-                      </div>
-                      <div class="column col3">
-                        <p><b>Tel</b></p><br>
-                        <p>02-802-7737</p><br>
-                      </div>
-                      <div class="column col4">
-                        <p><b>Fax</b></p><br>
-                        <p>02.852.7737</p><br>
-                      </div>
-                      <div class="column col5">
-                        <p><b>E-mail</b></p><br>
-                        <p>ggumjirak@gmail.com</p><br>
-                      </div>
-                      -->
-        </div>
-
+  <div class="row">
+    <div class="col-md-9">
+      <div id="daumRoughmapContainer1610084606497" class="root_daum_roughmap root_daum_roughmap_landing"
+        style="width:100%"></div>
+    </div>
+    <div class="col-md-3">
+      <h4 class="pb-5">찾아오시는 길</h4>
+      <small class="pt-3">Address</small>
+      <p>서울시 동작구 시흥대로 596<br>(신라스테이해링턴타워), 213호</p>
+      <small class="pt-3">Tel</small>
+      <p>02-802-7737</p>
+      <small class="pt-3">Fax</small>
+      <p>02.852.7737</p>
+      <small class="pt-3">E-mail</small>
+      <p>ggumjirak@gmail.com</p>
+    </div>
+  </div>
 </div>
-            <!-- //컨텐츠 영역  -->
+
+
+{% endblock %}
+
+{% block extra_script %}
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+<script charset="UTF-8">
+  new daum.roughmap.Lander({
+    "timestamp": "1610084606497",
+    "key": "23t7h",
+    "mapHeight": "500"
+  }).render();
+</script>
 {% endblock %}

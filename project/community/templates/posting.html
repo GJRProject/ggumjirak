@@ -4,12 +4,15 @@
 <div class="wrap">
     <div class="board">
         <div class="container" style='color:black'>
-            <div class="card">
-                <h5 class="card-header">{{post.postname}}</h5>
-                <div class="card-body">
-                  <p class="card-text">{{post.contents}}</p>
-                </div>
-            </div>
+                {% if post.mainphoto %}
+                <img src="{{post.mainphoto.url}}" alt="" class="img-fluid">
+                {% endif %}
+                
+                <h5>{{post.postname}}</h5>
+                
+                <p>{{post.contents |safe}}</p>
+                
+
             <div class="d-flex justify-content-center mt-3">
             <button class="btn btn-secondary btn-sm" type="button" onClick="history.go(-1)">목록</button>
             </div>

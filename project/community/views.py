@@ -6,11 +6,10 @@ from .models import *
 
 # 메인화면 
 def home(request):
-    noticelist = Notice.objects.all()[:5]
-    financiallist = Financial.objects.all()[:5]
-    donatlist = Donations_Report.objects.all()[:5]
-    projectlist = Project.objects.all()[:3]
-    return render(request, 'home.html', {'noticelist':noticelist, 'financiallist':financiallist, 'donatlist':donatlist, 'projectlist':projectlist})
+    noticelist = Notice.objects.all().order_by('-pub_date')[:5]
+    donatlist = Donations_Report.objects.all().order_by('-pub_date')[:5]
+    projectlist = Project.objects.all().order_by('-pub_date')[:3]
+    return render(request, 'home.html', {'noticelist':noticelist, 'donatlist':donatlist, 'projectlist':projectlist})
 
 # 스케쥴
 def schedule(request):
@@ -48,30 +47,19 @@ def rounding(request):
 # blog.html 페이지를 부르는 blog 함수
 def blog(request):
     # 모든 Post를 가져와 postlist에 저장합니다
-    postlist = Post.objects.all()
+    postlist = Post.objects.all().order_by('-pub_date')
     # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
     return render(request, 'blog.html', {'postlist':postlist})
 
 
 def notice(request):
     # 모든 Post를 가져와 postlist에 저장합니다
-    noticelist = Notice.objects.all()
+    noticelist = Notice.objects.all().order_by('-pub_date')
     paginator = Paginator(noticelist, 10)
     page = request.GET.get('page')
     posts = paginator.get_page(page)
 
     return render(request, 'notice.html', {'noticelist': noticelist, 'posts':posts})
-
-
-
-def financial(request):
-    # 모든 Post를 가져와 postlist에 저장합니다
-    financiallist = Financial.objects.all()
-    paginator = Paginator(financiallist, 10)
-    page = request.GET.get('page')
-    posts = paginator.get_page(page)
-
-    return render(request, 'financial.html', {'financiallist': financiallist, 'posts':posts})
 
 def history(request):
     # 모든 Post를 가져와 postlist에 저장합니다
@@ -84,7 +72,7 @@ def history(request):
 
 def donat_report(request):
     # 모든 Post를 가져와 postlist에 저장합니다
-    donatlist = Donations_Report.objects.all()
+    donatlist = Donations_Report.objects.all().order_by('-pub_date')
     paginator = Paginator(donatlist, 10)
     page = request.GET.get('page')
     posts = paginator.get_page(page)
@@ -105,12 +93,6 @@ def notice_posting(request, pk):
     # posting.html 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
     return render(request, 'posting.html', {'post':post})
 
-def financial_posting(request, pk):
-    # 게시글(Post) 중 pk(primary_key)를 이용해 하나의 게시글(post)를 검색
-    post = Financial.objects.get(pk=pk)
-    # posting.html 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
-    return render(request, 'posting.html', {'post':post})
-
 def donat_posting(request, pk):
     # 게시글(Post) 중 pk(primary_key)를 이용해 하나의 게시글(post)를 검색
     post = Donations_Report.objects.get(pk=pk)
@@ -126,7 +108,7 @@ def history_posting(request, pk):
 
 def project(request):
     # 모든 Post를 가져와 postlist에 저장합니다
-    postlist = Project.objects.all()
+    postlist = Project.objects.all().order_by('-pub_date')
     paginator = Paginator(postlist, 6)
     page = request.GET.get('page')
     posts = paginator.get_page(page)
@@ -141,7 +123,7 @@ def project_posting(request, pk):
 
 def news(request):
     # 모든 Post를 가져와 postlist에 저장합니다
-    postlist = News.objects.all()
+    postlist = News.objects.all().order_by('-pub_date')
     paginator = Paginator(postlist, 6)
     page = request.GET.get('page')
     posts = paginator.get_page(page)

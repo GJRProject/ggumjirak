@@ -10,21 +10,9 @@
         </ol>
         <div class="carousel-inner">
             {% for list in projectlist %}
-            {% if list.pk == 4 %}
-            <div class="carousel-item active" 
+            <div class="carousel-item {% if forloop.first %} active{% endif %}" 
                 style="background-image: url('{{list.mainphoto.url}}'); background-size: cover; background-position: center; height: 400px;">
             </div>
-            {% else %}
-            
-            <div class="carousel-item"
-                style="background-image: url('{{list.mainphoto.url}}'); background-size: cover; background-position: center; height: 400px;">
-            </div>
-            <!--
-            <div class="carousel-item"
-                style="background-image: url('/../static/image/chicago-690364_1280.jpg'); background-size: cover; background-position: center; height: 400px;">
-            </div>
-            -->
-            {% endif %}
             {% endfor %}
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -39,57 +27,37 @@
 
 
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <table class="table">
                 <thead>
                     <tr>
                         <td>
-                            <h4>공지사항</h4>
+                            <h5>공지사항</h5>
                         </td>
-                        <td><a href="/notice" class="more" title="더보기"><i class="fas fa-plus"></i></a></td>
                     </tr>
                 </thead>
                 <tbody>
                     {% for list in noticelist %}
                     <tr class="table_item">
-                        <td>
+                        <td colspan="2">
                             <a href="notice/{{list.pk}}/">
                                 {{list.postname}}
-                        </td>
-                    </tr>
-                    {% endfor %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                            <td><a href="/notice" class="more" title="더보기">더보기</a></td>
+                        </tr>
                 </tbody>
             </table>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <table class="table">
                 <thead>
                     <tr>
                         <td>
-                            <h4>재정보고</h4>
+                            <h5>후원금 결산내역</h5>
                         </td>
-                        <td><a href="/financial" class="more" title="더보기"><i class="fas fa-plus"></i></a></td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for list in financiallist %}
-                    <tr class="table_item">
-                        <td>
-                            <a href="financial/{{list.pk}}/">{{list.postname}}</span>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-        <div class="col-sm-4">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <td>
-                            <h4>후원금 결산내역</h4>
-                        </td>
-                        <td><a href="/donat_report" class="more" title="더보기"><i class="fas fa-plus"></i></a></td>
                     </tr>
                 </thead>
                 <tbody>
@@ -100,6 +68,7 @@
                         </td>
                     </tr>
                     {% endfor %}
+                    <tr><td><a href="/donat_report" class="more" title="더보기">더 보기</a></td></tr>
                 </tbody>
             </table>
         </div>

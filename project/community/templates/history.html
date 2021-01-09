@@ -1,49 +1,317 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %}{% block content %}
+<div class="container">
+  <p class="display-5">
+    꿈지락네트워크는 지속가능한 미래를 위하여
+    <br>
+    현시대를 살아가는 시민 당사자로서, 
+    <br>
+    정책과 시민을 연결하는 중간지원조직으로서 
+    <br>
+    반발짝 먼저 다음 사회를 준비합니다.
+  </p>
 
-{% block content %}
-<div class="wrap">
-    <div class="board">
-        <div class="board_container" style='color:black'>
-            <h1 style='color:black'>연혁 페이지입니다</h1>
-            <table>
-                {% for list in posts %}
-                    <ul>
-                        <li><a href="{{list.pk}}/" style='color:black'>{{list.postname}}</a></li>
-                    </ul>
-                {% endfor %}
-                </table>
-
-                {% if posts.has_previous %}
-    <a href="?page=1">맨 앞으로</a>
-    <a href="?page={{posts.previous_page_number}}">이전으로</a>
-    {% endif %}
-    <span>{{posts.number}}</span>
-    <span>/</span>
-    <span>{{posts.paginator.num_pages}}</span>
-    {% if posts.has_next %}
-    <a href="?page={{posts.next_page_number}}">다음으로</a>
-    <a href="?page={{posts.paginator.num_pages}}">맨 뒤로</a>
-    {% endif %}
-
-    <!--
-  <ul class="pagination justify-content-center pt-4">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-  -->
-        </div>
-       
+  <div class="row">
+    <div class="col-2 d-none d-sm-block">
+      <div id="list" class="list-group sticky-top">
+        <a class="list-group-item list-group-item-action" href="#future">미래세대</a>
+        <a class="list-group-item list-group-item-action" href="#youth">청년</a>
+        <a class="list-group-item list-group-item-action" href="#city">도시</a>
+        <a class="list-group-item list-group-item-action" href="#skill">기술</a>
+      </div>
     </div>
+      
+    <div class="col-9">
+      <div class="h-section" id="future">
+        <h4 class="border-top pt-3 pb-5 text-center">미래세대</h4>
+        <h6> 
+          좋은 시민을 양성하는 시민교육
+          <small>
+            
+          </small>
+        </h6>
+
+        <p>
+          <a class="fw-bold" href="https://blog.naver.com/bookcot/222050679465" target="_blank"> 
+            프로젝트 "교복입은 시민"</a>
+          은, 2018년부터 학교 밖 청소년을 포괄하기위하여 "가장 젊은 시민"으로 이름을 바꾸게 되었습니다.
+        꿈지락네트워크는 아동 청소년의 민주시민교육과 자치활동을 지원합니다.
+        시민으로서의 권리와 의무를 이해하고 사회의 구성원으로 적극적 참여 활동을 하도록 지원하는 민주시민교육과,
+        아동 청소년의 사회참여를 독려하고 지역사회 내 의사결정구조에 이들의 의견을 적극적으로 반영하는 청소년의회를 운영합니다.
+        만 18세 참정권이 보장된 우리 사회, 변화는 지금 우리 곁에서 이루어지고 있습니다.
+      </p>
+        
+        
+        <h6>
+          좋은 삶을 만들어 가는 진로탐색
+        </h6>
+        <p>
+          꿈지락네트워크는 삶의 방향을 찾아가는 아동 청소년들에게 자신의 꿈과 끼를 발견할 수 있는 계기를 지원합니다.
+          좋은 삶이란 무엇일까요? 사회를 만들어가는 좋은 시민이 되기 위한 첫 단추는, 먼저 자신의 삶의 주인이 되는 것 입니다.
+          "꿈知樂"은 꿈을 발견하고, 알아가는 즐거움을 의미하는, 우리 모두의 이름입니다.
+          "네트워크"는 그러한 꿈이 우리의 연결을 통해 실현될 수 있다는 바람입니다.
+          꿈지락네트워크는 아동 청소년들이 스스로 꿈을 발견하고, 목표를 향해 나아갈 수 있도록 다양한 진로 설계의 과정과 직업 체험 프로그램을 제공합니다. 한 사람을 성장시키기 위해 필요한 온마을의
+          전문가들을 연결하고 지역 곳곳에 숨어있는 진로교육의 자원을 발굴합니다.
+          2019년부터
+          <a class="fw-bold" href="https://blog.naver.com/youth_0824" target="_blank"> 
+          관악진로직업체험지원센터</a>
+          를 운영하며 지역맞춤형 진로교육을 지원하고 있습니다.
+          </p>
+      </div>
+
+
+      <div class="h-section" id="youth">
+        <h4 class="border-top pt-3">청년</h4>
+        <p><span style="color:#009d91"><strong>- 청년 주도 사회혁신을 위한 정책사업</strong></span></p>
+        <a class="se-module-image-link __se_image_link __se_link" href="#" onclick="return false;"> <img alt=""
+            class="se-image-resource"
+            src="https://postfiles.pstatic.net/MjAxODExMTJfMTY1/MDAxNTQxOTYwMzA5NDM2.apbEKL4e1g_ZiYJFO0_oUQJQ-bto7bwXRmpwOO4TPVkg.xCYrcJBuftH8VP8udRhH59s9ssomPYq6U1HMesyz2N0g.PNG.bookcot/%EC%B2%AD%EB%85%84%EC%A0%95%EC%B1%85.png?type=w773" />
+        </a>
+        <p>청춘, 빛나는 시간</p>
+        <p>꿈지락네트워크는 청년의 삶과 연결된 사회 전 분야의 정책을 설계하고 운용합니다.</p>
+
+        <p>청년정책은 우리사회가 지속가능하도록 만드는 미래정책입니다. 오늘 날, 청년세대가 겪고 있는 문제는 우리 사회의 구조적인 문제와 맞닿아 있습니다. 인구학적인 변화와 사회, 경제적 변화를 다각적으로
+          분석하여, 앞으로 우리가 어떤 미래를 설계해야 할 것인지 토론하고 선택해야 합니다.</p>
+        <p>꿈지락네트워크는 청년의 이야기에서 답을 찾고 정책의 관점에서 문제를 해결해나갑니다.</p>
+        <p>2016년부터 금천구 청년활동공간<strong> 청춘삘딩</strong>을 운영하며, 청년 주도 혁신사례를 만들어가고 있습니다.</p>
+        <p>자세한 내용은 아래 링크를 눌러주세요.</p>
+        <a class="se-oglink-thumbnail" href="http://blog.naver.com/bookcot/222050701598" target="_blank">
+          <img alt="" class="se-oglink-thumbnail-resource"
+            src="https://dthumb-phinf.pstatic.net/?src=%22http%3A%2F%2Fblogimgs.naver.net%2Fnblog%2Fmylog%2Fpost%2Fog_default_image_160610.png%22&amp;type=ff120" />
+        </a> <a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050701598" target="_blank"> </a>
+        <a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050701598" target="_blank"><strong>청년활동공간
+            청춘삘딩</strong> </a>
+        <p><a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050701598" target="_blank">​- 청년 주도 사회혁신을 위한
+            정책사업​꿈지락네트워크는 청년의 삶과 연결된 사회 전 분야의 정책을 설...</a></p>
+        <a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050701598" target="_blank"> </a>
+        <p><a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050701598"
+            target="_blank">blog.naver.com</a>
+        </p>
+        <a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050701598" target="_blank"> </a>
+
+        <a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050701598" target="_blank"> </a>
+        <p>꿈지락네트워크가 만들고 운영하는 청년공간에서 청년들은 다양한 모습으로 미래를 준비합니다.</p>
+        <p>이 시대 젊은이들이 그러하듯, 각종 시험을 대비하며 취업을 고민하는 청년부터 자신의 프로젝트를 구체화하는 청년,</p>
+        <p>삶을 노래하고 즐기는 청년까지 다양한 사람들이 모여 관계를 형성하고 지역사회에 새로운 활력을 불어 넣고 있습니다.</p>
+        <p>2019년 관악구 청년문화공간<strong> 신림동쓰리룸</strong>을 위탁했으며, 2020년 <strong>서울청년센터 관악오랑</strong>을 지정되었습니다.</p>
+        <p>자세한 내용은 아래 링크를 눌러주세요.</p>
+        <a class="se-oglink-thumbnail" href="http://ggumjirak.org/222050714611" target="_blank"><img alt=""
+            class="se-oglink-thumbnail-resource"
+            src="https://dthumb-phinf.pstatic.net/?src=%22http%3A%2F%2Fblogimgs.naver.net%2Fnblog%2Fmylog%2Fpost%2Fog_default_image_160610.png%22&amp;type=ff120" />
+        </a> <a class="se-oglink-info" href="http://ggumjirak.org/222050714611" target="_blank"> </a>
+        <a class="se-oglink-info" href="http://ggumjirak.org/222050714611" target="_blank"><strong>서울청년센터
+            관악오랑&middot;신림동쓰리룸</strong> </a>
+        <p><a class="se-oglink-info" href="http://ggumjirak.org/222050714611" target="_blank">- 청년 주도 사회혁신을 위한
+            정책사업​꿈지락네트워크가 만들고 운영하는 청년공간에서 청년들은 다양한 ...</a></p>
+        <a class="se-oglink-info" href="http://ggumjirak.org/222050714611" target="_blank"> </a>
+        <p><a class="se-oglink-info" href="http://ggumjirak.org/222050714611" target="_blank">ggumjirak.org</a>
+        </p>
+        <a class="se-oglink-info" href="http://ggumjirak.org/222050714611" target="_blank"> </a>
+
+        <a class="se-oglink-info" href="http://ggumjirak.org/222050714611" target="_blank"> </a>
+
+        <p><span style="color:#009d91"><strong>- 내일의 &#39;내 일&#39;을 찾는 창직 프로세스</strong></span></p>
+        <p>꿈지락네트워크는 새로운 세상에 대응하여 자신의 일을 만들어가는 이들의 도전을 지원합니다.</p>
+        <p>2020년 7월 시행되는 &#39;청년기본법&#39; 이전, 우리 사회에서 청년은 경제활동을 기준으로 재직자와 구직자로 분류되어 왔습니다.</p>
+        <p>우리는 청년이 좋아하는 분야를 찾아 적극적으로 전문성을 기르고 이를 직업화 할 수 있는 과정을 지원하여, 미래먹거리를 스스로 만들어내는 창직 프로세스를 함께 고민합니다.</p>
+        <a class="se-module-image-link __se_image_link __se_link" href="#" onclick="return false;"><img alt=""
+            class="se-image-resource"
+            src="https://postfiles.pstatic.net/MjAxODExMTJfMjY0/MDAxNTQxOTYxNzM5Mzc0.FZ96BrHq6tviuGuk_W8gsGaKg_bq1jRfkKyFoyrepqgg.xhss0ISyAKQcox3-34eeadSzWqewzQrAaiSEI6L4Y0cg.PNG.bookcot/%EC%82%AC%EC%A7%842.png?type=w773" />
+        </a>
+        <p>청년 정책마켓 운영</p>
+        <p>꿈지락네트워크의 창직 프로세스는 다음과 같이 진행됩니다.</p>
+        <p>첫번째, 창의적 활동을 기반으로 스스로를 새로이 규정하는 창직자에게 사업아이템과 역량을 객관화 할 수 있는<span style="color:#ff0010"><strong>
+              취향공동체</strong></span>를 제공합니다. 취미는 선호를 기반으로 한 커뮤니티의 중심 주제가 된다면, 취향은 주제에 관한 전문성을 포함합니다. 창직자는 취향공동체 안에서
+          &#39;내가 좋아하는 것&#39;이 다른 사람에게 어느정도의 매력도를 갖는지 측정해보고 사업화를 가늠해볼 수 있습니다. 또한, 자신의 재능을 타인과 나누는 과정에서 취미활동의 직업화에 필요한
+          실질적 요소들을 체크할 수 있습니다.</p>
+        <p>두번째, 지역 안에서 창직의 디딤돌이 될 수 있는 청년의 역할을 찾아 일과 사람을 이어줍니다. 꿈지락네트워크는 중앙정부가 국가적 차원에서 일자리 수를 늘리고 취업율을 증대시킨다면,
+          지방자치단체와 민간은 어떻게 협력할 수 있을지 수년간 고민해왔습니다. 답은<span style="color:#ff0010"><strong> 일경험</strong></span>이었습니다. 지역
+          안에 분명 존재하고는 있지만 청년 개인이 찾아낼 수 없는 다양한 일자리들이 있습니다. 창직을 원하는 청년은 유사한 분야의 일경험을 통해 자신의 계획을 구체화합니다. 청년은 일을 통해 창직을
+          준비할 수 있는 안정적 기반을 확보하고 지역은 젊은 일손과 활력을 얻습니다.</p>
+        <p>세번째, 청년의 지역 안착과 실질적 사업 운영을 위해 <span style="color:#ff0010"><strong>공공 재원과 전문가 컨설팅, 지역 네트워크를
+              제공</strong></span>합니다. 청년 창업가는 우리가 운영하고 있는 공공사업에 컨소시엄으로 참여하거나 소규모 과업을 용역계약 방식으로 수행하기도 합니다. 꿈지락네트워크는 청년이
+          사업 숙련도를 높이는 과정에서 시행착오를 겪을 때 회복탄력성을 확보할 수 있는 안전망이 되어줍니다.</p>
+        <p>우리는 공공분야 엑셀러레이터로서, 매출 증대라는 경제적 효과를 넘어 지역의 일자리를 창출하고 젊은 인재를 유입시키는 매개로서 창직과 창업을 바라봅니다. 이러한 관점에서 한 명의 창직자는 하나의
+          사회적 기회이며, 공공의 재원을 투여한다는 점에서 우리 모두는 창직프로세스에 참여하고 있는 것입니다. 참여란 유무형의 투자이기 때문입니다.</p>
+        <p>지역 네트워크는 우리 창직프로세스의 핵심입니다. 청년이 경제활동을 시작할 때 자신이 가진 다각적인 정체성을 고려하지 못하는 경우가 많습니다. 청년은 사업자로서 지역을 판로로서 한정합니다.
+          하지만 아이템에 따라 지역이 판로이자 거래처이고, 지역의 경제상황에 매출이 연동되는 경우도 있습니다. 유사한 창업 단계에 있는 청년들과 연계하여 새로운 부가가치를 창출하는 사례도 많습니다.
+        </p>
+        <p>꿈지락네트워크는 다년간의 경력을 통해 각 지역 안에 청년을 소개할 수 있는 연결고리를 보유하고 있습니다. 이해당사자와 연결되는 가운데, 지역은 청년에게 사업지를 넘어 삶터와 일터로서 자리하게
+          됩니다.</p>
+        <p>꿈지락네트워크 창직 프로세스는</p>
+        <p>한 사람의 꿈을 사회 구성원 모두가</p>
+        <p>공동의 참여를 통하여 키워내는 협력적 프로젝트입니다.</p>
+        <a class="se-module-image-link __se_image_link __se_link" href="#" onclick="return false;"><img alt=""
+            class="se-image-resource"
+            src="https://postfiles.pstatic.net/MjAyMDA3MjlfMTU0/MDAxNTk1OTgxODM0Njk4.rnpdyxsHLJYgzr_yObmV8QbZ16SYfzTwTzCXkr68mkAg.GWrgYIE_Ee4_-e-HqTtH3ck05fsIT9NHMjdtXR89-4Mg.JPEG.bookcot/창직프로세스.jpg?type=w773" />
+        </a>
+
+        <p>2019 구로구 청년창업인턴제 "월급 받고 사장하기"</p>
+      </div>
+
+      <!-- 도시 -->
+      <div class="h-section" id="city">
+        <h4 class="border-top pt-3">도시</h4>
+        <p><span style="color:#777777"><strong>- 지역의 주인이자 상인으로, 청년 주도 지역재생</strong></span></p>
+        <p>꿈지락네트워크는 도시에 활력을 불어넣기 위하여 청년주도의 물리적&middot;사회적 재생을 제안합니다.</p>
+        <p>건강한 도시는 건강한 시민이 성장해나가기 위한 필수조건입니다. 골목길 사이에 숨어있는 빈집들은 인구감소의 물리적 조짐이자 도시슬럼화의 주범이 되었습니다. 우리는 방치된 공간을 발굴하여 주민의
+          이야기를 통해 필요를 파악하고, 청년들의 독창적 감성을 더하여 지역 활력의 거점으로 만드는 프로젝트들을 실행 해왔습니다.</p>
+        <a class="se-module-image-link __se_image_link __se_link" href="#" onclick="return false;"><img alt=""
+            class="se-image-resource"
+            src="https://postfiles.pstatic.net/MjAyMDA3MjlfNTQg/MDAxNTk1OTg1ODE1MTE3.Mgu9bj3AxgHTyUcQASWWJQzZ6U1dI9GI5LTvAZumbMYg.VKGXpIq_IVBj-afLLE4HP494a2dDCo5N9ToOo1R8htMg.JPEG.bookcot/청춘삘딩.jpg?type=w773" />
+        </a>
+
+        <p>청춘삘딩은 방치된 청소년독서실을 기능전환 하기위해 청년이 시민참여예산을 확보하고, 조성과정에 관여한 협치&middot;재생사례입니다.</p>
+
+
+        <p>지역이 청년을 응원하면</p>
+        <p>청년은 지역에 변화를 만듭니다.</p>
+        <p>금천구 독산동 우시장일대 도시재생활성화사업의 일환으로 만들어진 앵커시설, 스튜디오 독산은</p>
+        <p>공간의 기획부터 운영까지 청년이 직접 참여하여 만들어졌습니다.</p>
+        <p>시설을 운영하기 위한 규칙들은 모두 독산동에 관심을 갖고 있는 다양한 연령대의 주민의 참여로 만들어졌습니다.</p>
+        <p>개관식에서 우리가 외쳤던 "우리가 우시장의 주민이자 상인이 되겠습니다!"라는 문장은 청년이 정책 수혜자에 그치지 않고 지역을 바꾸는 주체임을 선언하는 것이었습니다..​</p>
+        <h4>스튜디오독산</strong>은 2018년부터 2019년까지 운영되었으며,</p>
+          <p>자세한 내용은 아래의 링크를 눌러주세요.</p>
+          <a class="se-oglink-thumbnail" href="http://blog.naver.com/bookcot/222050727240" target="_blank"><img alt=""
+              class="se-oglink-thumbnail-resource"
+              src="https://dthumb-phinf.pstatic.net/?src=%22http%3A%2F%2Fblogimgs.naver.net%2Fnblog%2Fmylog%2Fpost%2Fog_default_image_160610.png%22&amp;type=ff120" />
+          </a> <a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050727240" target="_blank"> </a>
+          <a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050727240"
+            target="_blank"><strong>스튜디오독산</strong> </a>
+          <p><a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050727240" target="_blank">- 지역의 주인이자
+              상인으로, 청년 주도 지역재생​금천구 독산동 우시장일대 도시재생활성화사업의 일환으...</a></p>
+          <a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050727240" target="_blank"> </a>
+          <p><a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050727240"
+              target="_blank">blog.naver.com</a></p>
+          <a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050727240" target="_blank"> </a>
+
+          <a class="se-oglink-info" href="http://blog.naver.com/bookcot/222050727240" target="_blank"> </a>
+
+          <p><span style="color:#777777"><strong>- 지속가능한 도시를 상상하는 젊은 공동체</strong></span></p>
+          <p>꿈지락네트워크는 공간을 새로이 만드는 것에 그치지 않고,</p>
+          <p>청년이 직접 일자리&middot;살자리를 꾸려 가는 과정을 바탕으로 지역혁신을 창출합니다.</p>
+          <p>이 과정에서 우리는 꿈을 알아가는 즐거움을 느끼고 다음 세상을 만들어갈 동료를 만듭니다.</p>
+          <a class="se-module-image-link __se_image_link __se_link" href="#" onclick="return false;"><img alt=""
+              class="se-image-resource"
+              src="https://postfiles.pstatic.net/MjAyMDA3MjlfOTUg/MDAxNTk1OTkxNzA5OTQz.AJuuFB3-wDvUaavwXcYFFvwDaafszrzUY8nQq7aeEwgg.If8XW3vyeTynssvUkfov1OlZnClugR7WlKMxVVUAAhUg.JPEG.bookcot/구로도시재생랩2.jpg?type=w773" />
+          </a>
+          <p>20년간 방치된 폐가를 창업보육시설로 바꾼 구로 도시재생LAB 공간</p>
+          <p>꿈지락네트워크가 운영하는 &#39;창직프로세스&#39;는</p>
+          <p>청년이 지역의 주인이자 상인으로 성장하는 것을 목표합니다.</p>
+          <p>구로 도시재생LAB은 꿈지락네트워크와 구로구가 실제 거주지역에 위치한 폐가를 청년창업공간으로 변화시킨 빈집 재생 사례이자, 창직프로세스를 구로구에 맞춤형으로 변용하여 &#39;2019
+            청년창업인턴제&#39;(창업교육)와 &#39;2020 구로정착지원&#39;(사업장마련)의 프로그램을 제공하는 공공프로젝트입니다.</p>
+          <p>구로 도시재생LAB 프로그램 수료생은 &#39;지도상젊&#39;이라는 청년 연결망에 소속됩니다. 지도상젊은<strong> &#39;지속가능한 도시를 상상하는 젊은이들&#39;</strong>의
+            줄임말입니다. 우리는 지역 안에서 내 일을 만들어가는 청년에게 행정과 시장을 연결하는 중간지원조직이자, 지역을 함께 만들어가는 청년 당사자이며 동료입니다.</p>
+          <p>자세한 내용은 아래의 링크를 눌러주세요.</p>
+          <a class="se-oglink-thumbnail" href="http://ggumjirak.org/222050767699" target="_blank"><img alt=""
+              class="se-oglink-thumbnail-resource"
+              src="https://dthumb-phinf.pstatic.net/?src=%22http%3A%2F%2Fblogthumb2.naver.net%2FMjAyMDA4MDRfMTMw%2FMDAxNTk2NTA4NDMxMzAx.77ZupaVHiedatrsa4edNYFOIugA9aj1iIOfdnczkae8g.pMAiYqIQGitE5ROIoUmAudVpAK7Z6ET8PASlBhH9x0Eg.JPEG.bookcot%2F%25C3%25A2%25C1%25F7%25C7%25C1%25B7%25CE%25BC%25BC%25BD%25BA.jpg%3Ftype%3Dw2%22&amp;type=ff500_300" />
+          </a> <a class="se-oglink-info" href="http://ggumjirak.org/222050767699" target="_blank"> </a> <a
+            class="se-oglink-info" href="http://ggumjirak.org/222050767699" target="_blank"><strong>구로 도시재생LAB
+              운영</strong> </a>
+          <p><a class="se-oglink-info" href="http://ggumjirak.org/222050767699" target="_blank">구로 도시재생LAB은 꿈지락네트워크와
+              구로구가 실제 거주지역에 위치한 폐가를 청년창업공간으로 변화...</a></p>
+          <a class="se-oglink-info" href="http://ggumjirak.org/222050767699" target="_blank"> </a>
+          <p><a class="se-oglink-info" href="http://ggumjirak.org/222050767699" target="_blank">ggumjirak.org</a></p>
+          <a class="se-oglink-info" href="http://ggumjirak.org/222050767699" target="_blank"> </a>
+
+          <a class="se-oglink-info" href="http://ggumjirak.org/222050767699" target="_blank"> </a>
+
+          <p>청년들은 자신의 업을 찾아가는 여정에서 꿈지락네트워크를 만나 같은 방향으로 걷기도 합니다.</p>
+          <p>우리 프로젝트의 참여자로 활동했던 청년이 도시와 시민에 관심을 가지고 또 다른 프로젝트를 이끌어가는 사례도 있습니다. 도시재생활성화사업을 위한 공동체활성화 지원을 수행하며, 주민을 만나고
+            지역의 미래를 함께 설계하는 도시재생 코디네이터들입니다. 도시재생&middot;일자리 프로젝트에 소속되었던 청년활동가들이 주민과 함께 도시의 다음을 함께 고민하는 공동체를 만들어갑니다.</p>
+          <a class="se-module-image-link __se_image_link __se_link" href="#" onclick="return false;"><img alt=""
+              class="se-image-resource"
+              src="https://postfiles.pstatic.net/MjAyMDA3MjlfMjM2/MDAxNTk1OTkyOTI1OTM3.Tf2x93CtMBP4qWYr09_FRIoybDf688kw5cFQmmp0jBMg.yZm1Vc89XvP5QkbEgZreYSAEVoch64bQD9AzicXAqswg.JPEG.bookcot/누나장터.jpg?type=w773" />
+          </a>
+          <p>구로2동 도시재생현장지원센터 주민플리마켓 "누나공장"</p>
+
+          <a class="se-oglink-thumbnail"
+            href="https://blog.naver.com/PostList.nhn?blogId=guro2urc&amp;from=postList&amp;categoryNo=7"
+            target="_blank"><img alt="" class="se-oglink-thumbnail-resource"
+              src="https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fblogpfthumb-phinf.pstatic.net%2FMjAyMDAzMDNfMTg0%2FMDAxNTgzMjEwNzYzOTgw.t35QCiflCnNXqg4bRMNlpzlV4VedOprMjJycElKsHxEg.zyZJGepGOKM3grrC-sjxfxVPASAGwJ7AoijQ3mWcMhUg.PNG.guro2urc%2F%25C7%25C1%25B7%25CE%25C7%25CA.png%3Ftype%3Df204_204%22&amp;type=ff120" />
+          </a> <a class="se-oglink-info"
+            href="https://blog.naver.com/PostList.nhn?blogId=guro2urc&amp;from=postList&amp;categoryNo=7"
+            target="_blank">
+          </a>
+          <a class="se-oglink-info"
+            href="https://blog.naver.com/PostList.nhn?blogId=guro2urc&amp;from=postList&amp;categoryNo=7"
+            target="_blank"><strong>구로2 도시재생현장지원센터 : 네이버 블로그</strong> </a>
+          <p><a class="se-oglink-info"
+              href="https://blog.naver.com/PostList.nhn?blogId=guro2urc&amp;from=postList&amp;categoryNo=7"
+              target="_blank">서울특별시 구로구 구로동로19길 2, 3층 070-4218-7335~9</a></p>
+          <a class="se-oglink-info"
+            href="https://blog.naver.com/PostList.nhn?blogId=guro2urc&amp;from=postList&amp;categoryNo=7"
+            target="_blank">
+          </a>
+          <p><a class="se-oglink-info"
+              href="https://blog.naver.com/PostList.nhn?blogId=guro2urc&amp;from=postList&amp;categoryNo=7"
+              target="_blank">blog.naver.com</a></p>
+          <a class="se-oglink-info"
+            href="https://blog.naver.com/PostList.nhn?blogId=guro2urc&amp;from=postList&amp;categoryNo=7"
+            target="_blank">
+          </a>
+
+          <a class="se-oglink-info"
+            href="https://blog.naver.com/PostList.nhn?blogId=guro2urc&amp;from=postList&amp;categoryNo=7"
+            target="_blank">
+          </a>
+      </div>
+      <div class="h-section" id="skill">
+        <h4 class="border-top pt-3">기술</h4>
+        <p><span style="color:#003960"><strong>- 덕업일치를 위한 메이커 문화 확산</strong></span></p>
+        <p>꿈지락네트워크는 세상에 새로운 것을 만들어 냄으로써 혁신에 참여하는 모든 청년을 지원합니다.</p>
+        <p>인류가 만들어낸 기술로 우리 사회는 4차산업혁명이라는 새로운 분기점을 맞이했습니다. 어린 시절부터 컴퓨터와 함께 자란 우리 세대는 스마트폰, 인공지능, 사물인터넷과 친화하며 기술에 창의성을
+          덧입혀가고 있습니다.</p> <a class="se-module-image-link __se_image_link __se_link" href="#"
+          onclick="return false;"><img alt="" class="se-image-resource"
+            src="https://postfiles.pstatic.net/MjAyMDA3MzBfMTA5/MDAxNTk2MDc0NDI1MDc1.UoH4kmHyEb7EySKfMSt75JrLuXfzmslz8puTdOaZK7wg.xEstw-j1JFbpLwj-VDmfP740GzH_jKbxIXi0B5m3pikg.JPEG.bookcot/메이커1.jpg?type=w773" />
+        </a>
+
+        <p>기술을 결합한 아이디어 리빙랩</p>
+        <p>일반 시민 사이에서도 전문가의 기량을 갖춘 재야의 고수들이 발굴됩니다. 이들은 인터넷을 기반으로 창작의 기쁨을 타인과 나눕니다. 요즘 세대는 이처럼 좋아하는 일에 파고드는 것을
+          &#39;덕질&#39;이라 부르며, 언젠가 그 일로 돈도 벌고 싶다는 열망을 &#39;덕업일치&#39;라고 표현합니다. 창작과 공유를 바탕으로 만들어진 메이커 문화는 세대적 특성을 잘 반영하며
+          우리가 기술을 통해 당면한 문제를 해결할 수 있다는 가능성을 포함하고 있습니다.</p>
+        <a href="#" onclick="return false;">
+          <img alt=""
+            src="https://postfiles.pstatic.net/MjAyMDA3MzBfMjU1/MDAxNTk2MDc1ODMzOTIz.3n7t3chgB5RuGOpaoYe7DW6XQFLXaRoG6C0MQgFdGPcg.hx5Xdc45LKJUobN_aBoHjpjcS9StAFubVR8xk41p_Nog.JPEG.bookcot/메이커5.jpg?type=w773" />
+        </a>
+        <p>메이커들을 위한 드론 운용 및 창업 특강</p>
+        <p>꿈지락네트워크는 메이커스페이스 G캠프의 메이커 커뮤니티 운영 협력기관입니다.</p>
+        <p>2018년 중소벤처기업부 한국형 메이커스페이스 확산 정책의 일환으로 조성된 G캠프는 G밸리 내에 위치한 제조기업을 지원하기 위한 전문랩으로 조성되었습니다. 우리는 더 많은 시민이 메이커 문화를
+          가까이 접하고, 능동적으로 미래 과제를 해결할 수 있도록 다양한 프로그램과 행사를 운영하고 있습니다.</p>
+        <p>매년 크리스마스를 맞이하여 메이커 정기 교류회를 개최하고 있으며 전기, 전자, 공예, 봉제 등 다채로운 분야의 메이커들이 함께 풍성한 만들고 있습니다. 지역 안에서 활동하는 청년 메이커
+          커뮤니티를 발굴하고 이들의 사업화도 지원합니다. 아동부터 중년까지, 주민이 참여하여 삶과 밀접한 문제에 관하여 아이디어를 모으고 간단한 기술을 접목하여 해결방법을 만드는 아이디어 리빙랩을 열기도
+          합니다.</p>
+        <p>시민들은 메이커 프로그램에 참여하며 기술을 중심으로 다른 시민과 협업하는 기억을 갖게 됩니다.</p>
+        <a class="se-module-image-link __se_image_link __se_link" href="#" onclick="return false;">
+          <img alt=""
+            src="https://postfiles.pstatic.net/MjAyMDA3MzBfMTc1/MDAxNTk2MDc1Mjg5OTgy.lWKqHuwh7--mFhCYtFWrbOKbQ0_Uz4kR5KoB87KqJC8g.kNXiVp0kEpowrHsr645D_5d8LhrErE1K3gKWvVpejUgg.JPEG.bookcot/메이커2.jpg?type=w773" />
+        </a>
+
+        <p>2018 메이커문화확산 정기교류회 "메이커들의 미리메리크리스마스 파티"</p>
+
+
+        <table>
+          {% for list in posts %}
+          <ul>
+            <li><a href="{{list.pk}}/" style='color:black'>{{list.postname}}</a></li>
+          </ul>
+          {% endfor %}
+        </table>
+
+        {% if posts.has_previous %}
+        <a href="?page=1">맨 앞으로</a>
+        <a href="?page={{posts.previous_page_number}}">이전으로</a>
+        {% endif %}
+        <span>{{posts.number}}</span>
+        <span>/</span>
+        <span>{{posts.paginator.num_pages}}</span>
+        {% if posts.has_next %}
+        <a href="?page={{posts.next_page_number}}">다음으로</a>
+        <a href="?page={{posts.paginator.num_pages}}">맨 뒤로</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </div>
-{% endblock %}
+
+  {% endblock %}

@@ -1,3 +1,4 @@
 *.pyc
 project/community/__pycache__/*
 project/db.sqlite3
+project/media/*
